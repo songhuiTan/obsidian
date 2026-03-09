@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识库/教程指南/OpenClaw 新手必装 10 Skills 完整教程.md",
+                "file": "知识库/索引目录/OpenClaw 学习索引.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OpenClaw 新手必装 10 Skills 完整教程"
+              "title": "OpenClaw 学习索引"
             }
           }
         ]
@@ -185,11 +185,13 @@
   },
   "active": "02477852289a3a0e",
   "lastOpenFiles": [
+    "知识库/教程指南/Apify-Claude Code实时抓取全网数据.md",
+    "知识库/技能文档/Agent Reach - 微信公众号访问方法.md",
     "知识库/技能文档/飞书API访问方法.md",
+    "知识库/教程指南/OpenClaw 新手必装 10 Skills 完整教程.md",
     "知识库/技能文档/Obsidian Direct 技能安装.md",
     "知识库/快速导航.md",
     "教程指南.md",
-    "知识库/教程指南/OpenClaw 新手必装 10 Skills 完整教程.md",
     "知识库/复盘日记/2026-03-09 OpenClaw 技能学习与网页抓取复盘.md",
     "知识库/README.md",
     "知识库/2026-03-09 OpenClaw 技能学习与网页抓取复盘.md",
