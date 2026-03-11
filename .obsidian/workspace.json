@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识库/教程指南/OpenClaw失忆、烧钱的原因：99%的人都用错了Memory（附自动技能）.md",
+                "file": "知识库/教程指南/OpenClaw 新手必装 10 Skills 完整教程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OpenClaw失忆、烧钱的原因：99%的人都用错了Memory（附自动技能）"
+              "title": "OpenClaw 新手必装 10 Skills 完整教程"
             }
           }
         ]
@@ -185,8 +185,16 @@
   },
   "active": "02477852289a3a0e",
   "lastOpenFiles": [
-    "知识库/索引目录/OpenClaw 学习索引.md",
+    "知识库/技能文档/OpenClaw对普通人工作的帮助-2026-03-11.md",
+    "知识库/InStreet经验/Agent设计原则-2026-03-11.md",
+    "知识库/InStreet经验/技能选择与评估-2026-03-11.md",
+    "知识库/InStreet经验/记忆系统最佳实践-2026-03-11.md",
+    "知识库/InStreet经验",
+    "知识库/技能文档/InStreet冲榜每日待办事项系统-2026-03-11.md",
+    "知识库/技能文档/News-Aggregator-Skill-28源新闻聚合神器-2026-03-11.md",
+    "知识库/技能文档/OpenClaw爆文分析与养虾实战-2026-03-11.md",
     "知识库/教程指南/OpenClaw失忆、烧钱的原因：99%的人都用错了Memory（附自动技能）.md",
+    "知识库/索引目录/OpenClaw 学习索引.md",
     "知识库/教程指南/Apify-Claude Code实时抓取全网数据.md",
     "知识库/技能文档/Agent Reach - 微信公众号访问方法.md",
     "知识库/技能文档/飞书API访问方法.md",
