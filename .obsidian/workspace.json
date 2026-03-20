@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识库/教程指南/Apify-Claude Code实时抓取全网数据.md",
+                "file": "知识库/技能文档/2026-03-17-一天94次提交！我用OpenClaw指挥Claude Code，3天搭出一套AI开发团队.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Apify-Claude Code实时抓取全网数据"
+              "title": "2026-03-17-一天94次提交！我用OpenClaw指挥Claude Code，3天搭出一套AI开发团队"
             }
           }
         ]
@@ -183,8 +183,16 @@
       "bases:新建数据库": false
     }
   },
-  "active": "02477852289a3a0e",
+  "active": "1942865090ef84c0",
   "lastOpenFiles": [
+    "知识库/技能文档/2026-03-18-OpenClaw实战：公众号配图全自动化.md",
+    "知识库/技能文档/2026-03-20-OpenClaw本地可视化看板-Control-Center.md",
+    "知识库/教程指南/Apify-Claude Code实时抓取全网数据.md",
+    "知识库/技能文档/2026-03-20-Skywork-PPT-Skill使用教程.md",
+    "backup/openclaw_full_backup_20260320_114536.tar.gz",
+    "backup/openclaw_backup_20260320_114522.tar.gz",
+    "backup/clawdbot_backup_20260320_114505.tar.gz",
+    "知识库/技能文档/2026-03-17-一天94次提交！我用OpenClaw指挥Claude Code，3天搭出一套AI开发团队.md",
     "知识库/技能文档/Obsidian Direct 技能安装.md",
     "知识库/技能文档/News-Aggregator-Skill-28源新闻聚合神器-2026-03-11.md",
     "知识库/技能文档/Agent Reach - 微信公众号访问方法.md",
@@ -196,9 +204,6 @@
     "backup/full_20260311_152117/logs.tar.gz",
     "backup/full_20260311_152117/workspace.tar.gz",
     "backup/full_20260311_152117/skills.tar.gz",
-    "backup/full_20260311_152117/memory.tar.gz",
-    "backup/full_20260311_152117",
-    "backup/backup_20260311_152117.log",
     "知识库/ClawBot技能学习/ClawBot-Backup-Skill学习笔记-2026-03-11.md",
     "知识库/OpenClaw系统/备份恢复演练清单-2026-03-11.md",
     "知识库/技能文档/OpenClaw对普通人工作的帮助-2026-03-11.md",
@@ -209,16 +214,12 @@
     "知识库/技能文档/OpenClaw爆文分析与养虾实战-2026-03-11.md",
     "知识库/教程指南/OpenClaw失忆、烧钱的原因：99%的人都用错了Memory（附自动技能）.md",
     "知识库/索引目录/OpenClaw 学习索引.md",
-    "知识库/教程指南/Apify-Claude Code实时抓取全网数据.md",
     "知识库/技能文档/飞书API访问方法.md",
     "知识库/快速导航.md",
     "教程指南.md",
     "知识库/复盘日记/2026-03-09 OpenClaw 技能学习与网页抓取复盘.md",
     "知识库/README.md",
     "知识库/2026-03-09 OpenClaw 技能学习与网页抓取复盘.md",
-    "知识库/技能文档/OpenClaw 新手必装 10 Skills 清单.md",
-    "知识库/Obsidian Direct 技能安装.md",
-    "知识库/OpenClaw 新手必装 10 Skills 清单.md",
-    "知识库/OpenClaw 新手必装 10 Skills 完整教程.md"
+    "知识库/技能文档/OpenClaw 新手必装 10 Skills 清单.md"
   ]
 }
