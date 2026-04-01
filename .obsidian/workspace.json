@@ -185,6 +185,16 @@
   },
   "active": "1942865090ef84c0",
   "lastOpenFiles": [
+    "cc/claude-code-main.zip",
+    "cc/claw-code-main.zip",
+    "cc",
+    "未命名文件夹",
+    "知识库/技能文档/DeerFlow 2.0 - 字节Super Agent Harness-2026-03-27.md",
+    "知识库/技能文档/OpenDeepCrew - AI Agent团队编排服务器-2026-03-27.md",
+    "知识库/技能文档/AI Coding实战 - 10年54万行PHP系统2周重构Java-2026-03-27.md",
+    "知识库/技能文档/OpenCLI - 浏览器桥接多平台命令行工具-2026-03-27.md",
+    "知识库/技能文档/Claude Code + Stitch 2.0 无限生成网站终极指南.md",
+    "知识库/技能文档/我用Claude写周报-autoresearch方法提升skill通过率.md",
     "知识库/技能文档/2026-03-18-OpenClaw实战：公众号配图全自动化.md",
     "知识库/技能文档/2026-03-20-OpenClaw本地可视化看板-Control-Center.md",
     "知识库/教程指南/Apify-Claude Code实时抓取全网数据.md",
@@ -201,9 +211,6 @@
     "backup/full_20260311_152117/agents.tar.gz",
     "backup/full_20260311_152117/openclaw.json",
     "backup/full_20260311_152117/cron.tar.gz",
-    "backup/full_20260311_152117/logs.tar.gz",
-    "backup/full_20260311_152117/workspace.tar.gz",
-    "backup/full_20260311_152117/skills.tar.gz",
     "知识库/ClawBot技能学习/ClawBot-Backup-Skill学习笔记-2026-03-11.md",
     "知识库/OpenClaw系统/备份恢复演练清单-2026-03-11.md",
     "知识库/技能文档/OpenClaw对普通人工作的帮助-2026-03-11.md",
@@ -213,13 +220,6 @@
     "知识库/技能文档/InStreet冲榜每日待办事项系统-2026-03-11.md",
     "知识库/技能文档/OpenClaw爆文分析与养虾实战-2026-03-11.md",
     "知识库/教程指南/OpenClaw失忆、烧钱的原因：99%的人都用错了Memory（附自动技能）.md",
-    "知识库/索引目录/OpenClaw 学习索引.md",
-    "知识库/技能文档/飞书API访问方法.md",
-    "知识库/快速导航.md",
-    "教程指南.md",
-    "知识库/复盘日记/2026-03-09 OpenClaw 技能学习与网页抓取复盘.md",
-    "知识库/README.md",
-    "知识库/2026-03-09 OpenClaw 技能学习与网页抓取复盘.md",
-    "知识库/技能文档/OpenClaw 新手必装 10 Skills 清单.md"
+    "知识库/索引目录/OpenClaw 学习索引.md"
   ]
 }
