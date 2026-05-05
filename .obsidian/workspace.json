@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识库/技能文档/2026-03-17-一天94次提交！我用OpenClaw指挥Claude Code，3天搭出一套AI开发团队.md",
+                "file": "concepts/feishu-api-access.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-17-一天94次提交！我用OpenClaw指挥Claude Code，3天搭出一套AI开发团队"
+              "title": "feishu-api-access"
             }
           }
         ]
@@ -183,8 +183,42 @@
       "bases:新建数据库": false
     }
   },
-  "active": "1942865090ef84c0",
+  "active": "02477852289a3a0e",
   "lastOpenFiles": [
+    "concepts/知识蒸馏.md",
+    "entities/anthropic.md",
+    "README.md",
+    "log.md",
+    "index.md",
+    "未命名.canvas",
+    "xai.md",
+    "entities/hindsight.md",
+    "concepts/soul-dot-md.md",
+    "知识库/技能文档/我用Claude写周报-autoresearch方法提升skill通过率.md",
+    "raw/articles/hermes-full-config-guide.md",
+    "知识库/技能文档/hermes-llm-wiki实战/2026-05-05-Hermes满配指南-7步.md",
+    "queries/wechat-access-methods.md",
+    "queries/openclaw-web-search-tools.md",
+    "raw/articles/hermes-feishu-resource-library.md",
+    "知识库/技能文档/hermes-llm-wiki实战/2026-05-05-Hermes资源库-飞书归档.md",
+    "concepts/feishu-api-access.md",
+    "concepts/llm-wiki-pattern.md",
+    "entities/hermes-agent.md",
+    "raw/articles/hermes-llm-wiki-实战-2026-04-17.md",
+    "知识库/技能文档/hermes-llm-wiki实战/images/img_016.jpg",
+    "知识库/技能文档/hermes-llm-wiki实战/images/img_017.jpg",
+    "知识库/技能文档/hermes-llm-wiki实战/images/img_015.png",
+    "知识库/技能文档/hermes-llm-wiki实战/images/img_014.png",
+    "知识库/技能文档/hermes-llm-wiki实战/images/img_013.png",
+    "知识库/技能文档/hermes-llm-wiki实战/images/img_012.png",
+    "知识库/技能文档/hermes-llm-wiki实战/images/img_011.jpg",
+    "知识库/技能文档/hermes-llm-wiki实战/images/img_010.png",
+    "知识库/技能文档/hermes-llm-wiki实战/images/img_009.png",
+    "知识库/技能文档/hermes-llm-wiki实战/images/img_008.png",
+    "知识库/技能文档/hermes-llm-wiki实战/images",
+    "知识库/技能文档/hermes-llm-wiki实战/Hermes 这个技能我一直没碰，跑完一遍后悔没早试.md",
+    "知识库/技能文档/hermes-llm-wiki实战",
+    "知识库/技能文档/2026-03-17-一天94次提交！我用OpenClaw指挥Claude Code，3天搭出一套AI开发团队.md",
     "知识库/技能文档/OpenSpace核心机制分析与MyHarness优化方案-2026-04-06.md",
     "知识库/技能文档/MyHarness构建思路-从说明书到引擎-2026-04-06.md",
     "知识库/技能文档/gstack+CE组合工作流-Harness差距分析与补全方案-2026-04-06.md",
@@ -197,29 +231,6 @@
     "cc/claude-code-main/src/types/generated/events_mono/growthbook/v1/growthbook_experiment_event.ts",
     "cc/claude-code-main/src/types/generated/events_mono/growthbook/v1",
     "cc/claude-code-main/src/types/generated/google/protobuf/timestamp.ts",
-    "cc/claude-code-main/src/types/generated/events_mono/common/v1",
-    "cc/claude-code-main/src/types/generated/events_mono/claude_code/v1",
-    "cc/claude-code-main/src/components/agents/new-agent-creation/wizard-steps/TypeStep.tsx",
-    "知识库/技能文档/Claude Code 开源编译版 free-code.md",
-    "知识库/技能文档/Last30days-CN-中国平台30天深度研究技能-2026-04-01.md",
-    "知识库/技能文档/DeerFlow 2.0 - 字节Super Agent Harness-2026-03-27.md",
-    "知识库/技能文档/OpenDeepCrew - AI Agent团队编排服务器-2026-03-27.md",
-    "知识库/技能文档/AI Coding实战 - 10年54万行PHP系统2周重构Java-2026-03-27.md",
-    "知识库/技能文档/OpenCLI - 浏览器桥接多平台命令行工具-2026-03-27.md",
-    "知识库/技能文档/Claude Code + Stitch 2.0 无限生成网站终极指南.md",
-    "知识库/技能文档/我用Claude写周报-autoresearch方法提升skill通过率.md",
-    "知识库/技能文档/2026-03-18-OpenClaw实战：公众号配图全自动化.md",
-    "知识库/技能文档/2026-03-20-OpenClaw本地可视化看板-Control-Center.md",
-    "知识库/教程指南/Apify-Claude Code实时抓取全网数据.md",
-    "知识库/技能文档/2026-03-20-Skywork-PPT-Skill使用教程.md",
-    "知识库/技能文档/2026-03-17-一天94次提交！我用OpenClaw指挥Claude Code，3天搭出一套AI开发团队.md",
-    "知识库/技能文档/Obsidian Direct 技能安装.md",
-    "知识库/技能文档/News-Aggregator-Skill-28源新闻聚合神器-2026-03-11.md",
-    "知识库/技能文档/Agent Reach - 微信公众号访问方法.md",
-    "知识库/教程指南/OpenClaw 新手必装 10 Skills 完整教程.md",
-    "知识库/ClawBot技能学习/ClawBot-Backup-Skill学习笔记-2026-03-11.md",
-    "知识库/OpenClaw系统/备份恢复演练清单-2026-03-11.md",
-    "知识库/技能文档/OpenClaw对普通人工作的帮助-2026-03-11.md",
-    "知识库/InStreet经验/Agent设计原则-2026-03-11.md"
+    "cc/claude-code-main/src/types/generated/events_mono/common/v1"
   ]
 }
