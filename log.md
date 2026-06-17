@@ -116,3 +116,30 @@
 - 🟡 19 个页面标记为 confidence: high（需你签字确认）
 - 🟡 3 个断链指向已规划但未创建的页面（openai, moonshot-ai, xai）
 - ℹ️ raw/ 层 frontmatter 格式差异、孤儿页、大页面均为预期行为
+
+## [2026-06-04] ingest | 6 篇技能文档摄入 — OpenClaw互联网访问、企业架构、技能关系图、Coze协作、知识系统
+
+- 来源：知识库/技能文档/ 新增6篇
+- 新建 5 个实体页：
+  - `entities/coze.md` — 扣子（Coze）字节跳动多 Agent 协作平台
+  - `entities/skilldag.md` — SkillDAG 复旦/NUS/A*STAR 技能关系图（5种边类型+在线演化）
+  - `entities/langgraph.md` — LangGraph 状态编排框架（四层架构+MCP集成）
+  - `entities/book-to-skill.md` — 书籍转 Skill 工具（PDF/EPUB→Claude Code Skill）
+  - `entities/compound-engineering.md` — Compound Engineering 实体页（让AI产出持续复用）
+- 更新 1 个概念页：
+  - `concepts/llm-wiki-pattern.md` — 补充研发自动化视角、Compound Engineering 视角、1800万阅读量数据
+- 更新：`index.md`（+5 实体条目，总页数更新为 22）
+
+## [2026-06-15] lint | 完整健康检查
+- 扫描 24 个 Wiki 页面（16 entities + 6 concepts + 0 comparisons + 2 queries）+ 7 raw/ 文件
+- 🔴 断链：11 个无效 [[wikilinks]]（openai, instreet, gstack, skill-development, agent-reach, bb-browser, stitch-2.0, knowledge-management, harness-architecture, moonshot-ai, xai）
+- 🔴 红绿灯违规：24 页 confidence:high 均未获人类签字确认；2 查询页 AI 单方面归档
+- 🔴 4 个页面出站链接为 0（hermes-agent, feishu-api-access, 2 queries）
+- 🟡 标签违规：16 个标签不在 SCHEMA.md 分类体系内（platform, cli, model, lab 等）
+- 🟡 索引占位页面：25 个条目指向不存在的文件（41天未解决）
+- 🟡 大页面预警：feishu-api-access.md 已达 190 行，接近 200 行分割阈值
+- 🟢 孤儿页：9 个页面无入站链接（coze, skilldag, langgraph, book-to-skill, neuro-symbolic-ai, feishu-api-access, soul-dot-md, 2 queries）
+- ✅ 无过期内容（全部 < 90 天）
+- ✅ 无矛盾/争讼标记
+- ✅ 无大页面超过 200 行
+- 建议：本周优先修复断链和红绿灯违规，确认 confidence 标记

@@ -1,12 +1,14 @@
 ---
 title: LLM Wiki 模式 (Karpathy)
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-06-04
 type: concept
 tags: [knowledge-mgmt, architecture, workflow, rag]
 sources:
   - raw/articles/hermes-llm-wiki-实战-2026-04-17.md
   - SCHEMA.md
+  - 知识库/技能文档/2026-06-04-AI研发自动化：Wiki知识库+技能包.md
+  - 知识库/技能文档/2026-06-04-用AI搭一套会复利的知识系统【数字游牧人懒人包】.md
 confidence: high
 ---
 
@@ -17,6 +19,8 @@ confidence: high
 LLM Wiki 是 Andrej Karpathy 提出的知识管理模式：让 LLM 将原始材料**编译**（compile）为结构化的 Wiki，之后所有查询都发生在这个 Wiki 上，而非每次从原始文档中临时检索。
 
 核心比喻：**Obsidian 是你的 IDE，LLM 是你的程序员，Wiki 就是你的代码库。**
+
+2026年4月发布后，阅读量达到 1800 万，迅速成为 AI 知识管理的主流范式。
 
 ## 与 RAG 的本质区别
 
@@ -31,13 +35,28 @@ LLM Wiki 是 Andrej Karpathy 提出的知识管理模式：让 LLM 将原始材�
 ## 三层架构
 
 ### 第一层：raw（原始来源层）
-LLM **只读不改**的原始材料。文档、文章、笔记、代码。是"事实的唯一源头"。
+LLM **只读不改**的原始材料。文档、图片、代码。是"事实的唯一源头"。
 
 ### 第二层：wiki（编译层）
-LLM 按 SCHEMA 规则编译出来的页面网络。包括 entities/、concepts/、comparisons/、queries/，以及 index.md（总目录）和 log.md（操作日志）。页面间通过 `[[wikilink]]` 双向互联。
+LLM 按 SCHEMA 规则编译出来的页面网络。包括 entities/、concepts/、comparisons/、queries/，以及 index.md（总目录）和 log.md（操作日志）。页面间通过 `[[wikilink]]` 双向互联。**人只读不写**。
 
 ### 第三层：SCHEMA（规则层）
-`SCHEMA.md` 一个文件，定义：结构、命名规范、标签分类、页面创建阈值、更新策略。是用户和 LLM 之间的契约。
+`SCHEMA.md` 一个文件，也是写给 LLM 的"工作规范"——目录约定、摄入流程、查询/巡检流程。是把 LLM 从"通用 chatbot"变成"有纪律的 wiki 维护者"的关键。
+
+## 为什么能 Work
+
+维护知识库的累活不是"读"和"想"，而是**迭代 wiki** 的过程：更新交叉引用、改综述、标矛盾、保一致性。人类放弃 wiki 是因为维护成本随规模超线性增长；但 LLM 不会累、不会忘、一次能改多个文件，维护成本被压到接近零，wiki 才能长期活着。
+
+## 研发自动化视角
+
+LLM Wiki 模式不仅用于个人知识管理，也可用于团队研发提效：
+- 领域专家 SKILL 包：写技术方案、开发代码、技术评审、自动化测试、专业答疑、问题排查
+- 团队共享：成员共享，多 Agent 平台可用
+- 终极目标：全自动研发流程——用户提供 PRD，剩下工作全交给 AI
+
+## Compound Engineering 视角
+
+LLM Wiki 和 [[compound-engineering]] 理念一脉相承：**不要只让 AI 生成一次性的结果，要让 AI 帮你生成一套能持续使用的系统。** 知识系统中的"摄入→消化→输出→巡检"四步流程，就是 LLM Wiki 模式的具体落地。
 
 ## 实施要点
 
