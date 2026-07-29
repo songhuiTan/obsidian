@@ -3,7 +3,7 @@
 > 个人 AI Agent 学习、实践与归档的知识库
 > 
 > 归档来源：微信公众号、飞书文档、B站/抖音/YouTube 视频等
-> 最后更新：2026-06-16
+最后更新：2026-07-24
 
 ---
 
@@ -11,32 +11,45 @@
 
 | 目录 | 说明 | 数量 |
 |------|------|------|
-| [[技能文档]] | 归档文章、视频转录、技能文档 | **87 篇** |
-| [[教程指南]] | 完整教程与指南 | 4 篇 |
-| [[复盘日记]] | 学习复盘与踩坑记录 | 2 篇 |
-| [[索引目录]] | 索引文件 | 1 篇 |
-| [[InStreet经验]] | InStreet 平台经验 | 3 篇 |
-| [[ClawBot技能学习]] | ClawBot 技能 | 1 篇 |
-| [[OpenClaw系统]] | OpenClaw 系统配置 | 1 篇 |
+| 技能文档 | 归档文章、视频转录、技能文档 | **250 篇** |
+| 教程指南 | 完整教程与指南 | 5 篇 |
+| 复盘日记 | 学习复盘与踩坑记录 | 2 篇 |
+| 索引目录 | 索引文件 | 1 篇 |
+| InStreet经验 | InStreet 平台经验 | 3 篇 |
+| ClawBot技能学习 | ClawBot 技能 | 1 篇 |
+| OpenClaw系统 | OpenClaw 系统配置 | 1 篇 |
 | assets/ | 图片、封面等资源 | — |
 
-**快速入口 → [[快速导航]]**
+| **快速入口 → [[快速导航]]**（共 **276 篇**）
+
+---
+
+## 🗺️ Wiki Layer 2 — 知识提炼层
+
+从 275 篇归档中提炼出 32 个 wiki 页面，交叉引用形成知识网络：
+
+| 层级 | 数量 | 说明 |
+|------|------|------|
+| 实体页 | 14 | 工具/框架/平台详解（entities/） |
+| 概念页 | 13 | 架构模式/方法论（concepts/） |
+| 对比页 | 5 | 同类工具横向选型对比（comparisons/） |
+| 总计 | 32 | 详见 → [[index.md]] |
 
 ---
 
 ## 🏷️ 主题概览
 
 ### AI Agent 框架与工程化
-Agent 架构设计、Harness 工程、Skill 系统、多 Agent 编排
-`→ 技能文档/Agent框架*` *共 ~16 篇*
+Agent 架构设计、Harness 工程、Skill 系统、多 Agent 编排、OpenDev
+`→ 技能文档/Agent框架*` *共 ~31 篇*
 
 ### Claude Code & Codex
 桌面端教程、源码分析、实战案例、插件生态
-`→ 技能文档/Claude* / Codex*` *共 ~12 篇*
+`→ 技能文档/Claude* / Codex* / CoreCoder*` *共 ~13 篇*
 
 ### RAG 与知识检索
-向量检索、文档解析、超长文本处理、Trove AI
-`→ 技能文档/RAG* / Trove* / LiteParse*` *共 ~7 篇*
+向量检索、文档解析、超长文本处理、Trove AI、ChromaDB 知识库搭建
+`→ 技能文档/RAG* / Trove* / LiteParse* / kb-builder* / Hyper-Extract* / HereVault*` *共 ~13 篇*
 
 ### 知识管理与归档
 Obsidian wiki、飞书知识库、微信文章归档、视频归档（B站/抖音/YouTube）
@@ -44,11 +57,11 @@ Obsidian wiki、飞书知识库、微信文章归档、视频归档（B站/抖�
 
 ### 工具与实用技能
 OpenCLI、MarkItDown、echocut、Paper2Any、Last30days 等
-`→ 技能文档/各工具名*` *共 ~13 篇*
+`→ 技能文档/各工具名*` *共 ~16 篇*
 
 ### 企业级 AI & AIOps
-AI 客服、运维平台、企业级架构、Spring Boot 集成
-`→ 技能文档/企业* / AIOps* / AI客服*` *共 ~8 篇*
+AI 客服、运维平台、企业级架构、Spring Boot 集成、AI智能批改、AI Factory
+`→ 技能文档/企业* / AIOps* / AI客服* / AI智能批改* / AI-Factory* / 智能OnCall* / 去哪儿*` *共 ~12 篇*
 
 ### OpenClaw 生态
 OpenClaw 平台、ClawBot、技能市场、DeerFlow

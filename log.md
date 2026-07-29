@@ -142,4 +142,189 @@
 - ✅ 无过期内容（全部 < 90 天）
 - ✅ 无矛盾/争讼标记
 - ✅ 无大页面超过 200 行
-- 建议：本周优先修复断链和红绿灯违规，确认 confidence 标记
+| 建议：本周优先修复断链和红绿灯违规，确认 confidence 标记
+
+## [2026-06-22] lint | 第5次健康检查 — 7天后
+- 扫描 24 个 Wiki 页面（16 entities + 6 concepts + 0 comparisons + 2 queries）+ 7 raw/ 文件
+- 🔴 断链：16 个无效 [[wikilinks]]
+  - entities/anthropic.md → [[openai]]
+  - entities/book-to-skill.md → [[skill-development]], [[knowledge-management]]
+  - entities/claude-code.md → [[stitch-2.0]]
+  - entities/compound-engineering.md → [[knowledge-management]]
+  - entities/myharness.md → [[gstack]]
+  - entities/openclaw.md → [[instreet]]
+  - entities/opencli.md → [[bb-browser]], [[agent-reach]]
+  - entities/openspace.md → [[skill-development]]
+  - entities/skilldag.md → [[skill-development]]
+  - concepts/llm-wiki-pattern.md → [[wikilink]]（元示例残留）
+  - concepts/neuro-symbolic-ai.md → [[harness-architecture]]
+  - concepts/知识蒸馏.md → [[moonshot-ai]], [[xai]], [[openai]]
+- 🔴 红绿灯违规：24 页 confidence:high 均未获人类签字确认（🔴 红灯区要求）
+- 🔴 红绿灯违规：2 查询页（openclaw-web-search-tools, wechat-access-methods）AI 单方面归档，未走黄灯审批流程
+- 🟡 索引占位页面：24 个条目指向不存在的文件（48天未解决）
+  - 占位列表：agent-design-principles, agent-memory-system, agent-reach, ai-coding-practice, bb-browser, clawdbot, control-center, free-code, gstack, gstack-vs-ce, harness-architecture, harness-comparison, instreet, knowledge-management, last30days-cn, news-aggregator, obsidian-direct, playwright-scraper, retrospective-methods, skill-development, skywork-ppt, stitch-2.0, workflow-automation, zread-cli
+- 🟡 4 个页面出站链接为 0（hermes-agent, feishu-api-access, 2 queries）— 违反 ≥2 条出站链接规范
+- 🟡 7 个 raw/ 文件 sha256 与当前正文不匹配（需排查是否内容漂移或初始摘要计算方式不同）
+- 🟡 大页面预警：feishu-api-access.md 190 行，仍接近 200 行分割阈值
+- 🟡 标签建议：16 个常用标签未正式纳入 SCHEMA.md 分类体系（model, cli, browser, cloud, platform, orchestration, optimization, research, technique, configuration, customization, china, api, multi-agent, ai-coding, lab）
+- 🟢 孤儿页：0 — 所有页面均有入站链接 ✅
+- 🟢 无过期内容（全部 < 90 天）✅
+- 🟢 无矛盾/争讼标记 ✅
+- 🟢 无大页面超过 200 行 ✅
+- 🟢 无 frontmatter 字段缺失 ✅
+- 🟢 无标签违规（所有标签虽未正式加入分类体系，但都已在 lint 中被识别）✅
+- 🟢 Log.md 条目数 16，无需轮转 ✅
+- 主要恶化项：断链从 11 → 16（+5），hermes-agent 和 feishu-api-access 出站链接仍为 0
+
+## [2026-06-29] lint | 第6次健康检查 — 7天后
+- 扫描 24 个 Wiki 页面（16 entities + 6 concepts + 0 comparisons + 2 queries）+ 7 raw/ 文件
+- 🔴 断链：12 个无效 [[wikilinks]]（16 次出现），较上周减少 4（stitch-2.0 移除后仍被引用）
+  - entities/anthropic.md → [[openai]]
+  - entities/book-to-skill.md → [[skill-development]], [[knowledge-management]]
+  - entities/claude-code.md → [[stitch-2.0]]
+  - entities/compound-engineering.md → [[knowledge-management]]
+  - entities/myharness.md → [[gstack]]
+  - entities/openclaw.md → [[instreet]]
+  - entities/opencli.md → [[agent-reach]], [[bb-browser]]
+  - entities/openspace.md → [[skill-development]]
+  - entities/skilldag.md → [[skill-development]]
+  - concepts/llm-wiki-pattern.md → [[wikilink]]（元示例残留）
+  - concepts/neuro-symbolic-ai.md → [[harness-architecture]]
+  - concepts/知识蒸馏.md → [[moonshot-ai]], [[openai]], [[xai]]
+- 🔴 红绿灯违规：24 页 confidence:high 均未获人类签字确认（🔴 红灯区要求，7周未解决）
+- 🔴 红绿灯违规：2 查询页（openclaw-web-search-tools, wechat-access-methods）AI 单方面归档，未走黄灯审批流程
+- 🟡 索引占位页面：24 个条目指向不存在的文件（55天未解决）
+  - 占位列表同上次（agent-design-principles, agent-memory-system 等 24 个）
+- 🟡 5 个页面出站链接不足 2 条（hermes-agent: 0, feishu-api-access: 0, hindsight: 1, openclaw-web-search-tools: 0, wechat-access-methods: 0）
+- 🟡 7 个 raw/ 文件 sha256 与当前正文不匹配（与上次一致，疑似摘要计算方式偏离）
+- 🟡 大页面预警：feishu-api-access.md 190 行，仍接近 200 行分割阈值（连续 3 次 lint 提醒）
+- 🟡 16 个标签未正式纳入 SCHEMA.md 分类体系（ai-coding, api, browser, china, cli, cloud, configuration, customization, lab, model, multi-agent, optimization, orchestration, platform, research, technique — 55 天未解决）
+- 🟢 孤儿页：9 个页面无入站链接（coze, skilldag, langgraph, book-to-skill, neuro-symbolic-ai, feishu-api-access, soul-dot-md, 2 queries）— ⚠️ 较上次恶化（上次 0 孤儿）
+- 🟢 无过期内容（全部 < 90 天）✅
+- 🟢 无矛盾/争讼标记 ✅
+- 🟢 无大页面超过 200 行 ✅
+- 🟢 无 frontmatter 字段缺失 ✅
+- 🟢 Log.md 条目数 18，无需轮转 ✅
+- 🟢 标签使用与上周一致，无新增违禁标签 ✅
+- 🟢 sources 格式一致 ✅
+- 主要恶化：孤儿页从 0 → 9，hermes-agent 和 feishu-api-access 出站链接仍为 0（连续 3 次 lint 未修复）
+| 建议优先修复：1) 为孤儿页添加入站链接 2) 为 hermes-agent/feishu-api-access 补充出站链接 3) 确认 confidence:high 签名 4) 新建 gstack/openai/skill-development 等高频引用目标页
+
+## [2026-07-13] lint | 第8次健康检查 — 7天后
+- 扫描 24 个 Wiki 页面（16 entities + 6 concepts + 0 comparisons + 2 queries）+ 7 raw/ 文件 + 知识库（245 篇）
+- 🔴 **断链恶化：12 个无效 [[wikilinks]]（16 次出现），较上周反弹 +7**
+  - entities/anthropic.md → [[openai]]
+  - entities/book-to-skill.md → [[skill-development]], [[knowledge-management]]
+  - entities/claude-code.md → [[stitch-2.0]]
+  - entities/compound-engineering.md → [[knowledge-management]]
+  - entities/myharness.md → [[gstack]]
+  - entities/openclaw.md → [[instreet]]
+  - entities/opencli.md → [[agent-reach]], [[bb-browser]]
+  - entities/openspace.md → [[skill-development]]
+  - entities/skilldag.md → [[skill-development]]
+  - concepts/llm-wiki-pattern.md → [[wikilink]]（元示例残留）
+  - concepts/neuro-symbolic-ai.md → [[harness-architecture]]
+  - concepts/知识蒸馏.md → [[moonshot-ai]], [[openai]], [[xai]]
+- 🔴 **红绿灯违规：24 页 confidence:high 均未获人类签字确认（🔴 红灯区要求，9 周未解决）**
+- 🔴 **红绿灯违规：2 查询页（openclaw-web-search-tools, wechat-access-methods）AI 单方面归档，未走黄灯审批流程**
+- 🔴 **4 页面出站链接为 0**：hermes-agent, feishu-api-access, 2 queries（连续 5 次 lint 未修复）
+- 🟡 索引占位页面：24 条目指向不存在的文件（69 天未解决），同上次
+- 🟡 1 页面出站链接不足 2 条：hindsight（仅 1 条，连续 5 次）
+- 🟡 2 个 raw/ 文件 sha256 不匹配：hermes-full-config-guide.md, hermes-llm-wiki-实战-2026-04-17.md
+- 🟡 大页面预警：feishu-api-access.md 191 行（连续 6 次 lint 提醒）
+- 🟡 16 个标签未正式纳入 SCHEMA.md 分类体系（model, lab, china, cli, browser, ai-coding, cloud, orchestration, platform, research, configuration, customization, multi-agent, api, technique, optimization — 69 天未解决）
+- 🟡 知识库从初始化时的 45 篇增长至 245 篇，但 Wiki 页面数仍为 24 未增长（9 周未摄入新源）
+- 🟢 孤儿页：9 页面无入站链接（book-to-skill, coze, feishu-api-access, langgraph, neuro-symbolic-ai, 2 queries, skilldag, soul-dot-md）— 与上周一致
+- 🟢 无过期内容（全部 < 90 天）✅
+- 🟢 无矛盾/争讼标记 ✅
+- 🟢 无大页面超过 200 行 ✅
+- 🟢 无 frontmatter 字段缺失 ✅
+- 🟢 Log.md 条目数 20，无需轮转 ✅
+- 主要恶化：断链从 5 → 12（+7），上次报告中的修复被回退或未执行；知识库增长 5.4 倍但 Wiki 停滞
+| 建议：本周优先 1) 修复断链（新建 openai/gstack/instreet 等高频引用页，移除或替换 skill-development 等遗留占位引用）2) 为 hermes-agent/feishu-api-access 补充出站链接 3) 确认 confidence:high 签名 4) 恢复来源摄入以跟上知识库增长
+
+## [2026-07-06] lint | 第7次健康检查 — 7天后
+- 扫描 24 个 Wiki 页面（16 entities + 6 concepts + 0 comparisons + 2 queries）+ 7 raw/ 文件
+- 🔴 断链：5 个无效 [[wikilinks]]，较上周减少 7（stitch-2.0 被引用链已修复）
+  - entities/anthropic.md → [[openai]]
+  - concepts/llm-wiki-pattern.md → [[wikilink]]（元示例残留）
+  - concepts/知识蒸馏.md → [[moonshot-ai]], [[openai]], [[xai]]
+- 🔴 红绿灯违规：24 页 confidence:high 均未获人类签字确认（🔴 红灯区要求，8周未解决）
+- 🔴 红绿灯违规：2 查询页（openclaw-web-search-tools, wechat-access-methods）AI 单方面归档，未走黄灯审批流程
+- 🔴 4 页面出站链接为 0（hermes-agent, feishu-api-access, 2 queries）— 连续 4 次未修复
+- 🟡 索引占位页面：24 个条目指向不存在的文件（62天未解决）
+  - 占位列表同上次（agent-design-principles, agent-memory-system 等 24 个）
+- 🟡 1 页面出站链接不足 2 条：hindsight（仅 1 条）
+- 🟡 7 个 raw/ 文件 sha256 与当前正文不匹配（与上次一致，疑似摘要计算方式偏离）
+- 🟡 大页面预警：feishu-api-access.md 191 行（连续 5 次 lint 提醒，接近分割阈值）
+- 🟡 16 个标签未正式纳入 SCHEMA.md 分类体系（ai-coding, api, browser, china, cli, cloud, configuration, customization, lab, model, multi-agent, optimization, orchestration, platform, research, technique — 62 天未解决）
+- 🟢 孤儿页：9 个页面无入站链接（coze, skilldag, langgraph, book-to-skill, neuro-symbolic-ai, feishu-api-access, soul-dot-md, 2 queries）— 与上周一致，未恶化
+- 🟢 无过期内容（全部 < 90 天）✅
+- 🟢 无矛盾/争讼标记 ✅
+- 🟢 无大页面超过 200 行 ✅
+- 🟢 无 frontmatter 字段缺失 ✅
+- 🟢 Log.md 条目数 19，无需轮转 ✅
+- 🟢 正改善：断链从 12 → 5（-7），stitch-2.0 相关断链已清除
+- 主要趋势：断链改善但 orphan 问题持续未解决（9 页连续 2 次 lint），hermes-agent/feishu-api-access 出站链接连续 4 次定期提及未修复，红绿灯违规（24 页 confidence:high 未签字）连续 8 周未解决
+
+## [2026-07-20] lint | 第8次健康检查 — 14天后
+- 扫描 24 个 Wiki 页面（16 entities + 6 concepts + 0 comparisons + 2 queries）+ 7 raw/ 文件
+- 🔴 断链：17 个无效 [[wikilinks]]，较上次严重恶化（+12）
+  - entities/anthropic.md → [[openai]]（持续11周未修复）
+  - entities/book-to-skill.md → [[knowledge-management]], [[skill-development]]（新）
+  - entities/claude-code.md → [[stitch-2.0]]（回退：上次已修复，现重新出现）
+  - entities/compound-engineering.md → [[knowledge-management]]（新）
+  - concepts/llm-wiki-pattern.md → [[wikilink]]（元示例残留，持续11周）
+  - entities/myharness.md → [[gstack]]×2（新）
+  - concepts/neuro-symbolic-ai.md → [[harness-architecture]]（新）
+  - entities/openclaw.md → [[instreet]]（新）
+  - entities/opencli.md → [[agent-reach]], [[bb-browser]]（新）
+  - entities/openspace.md → [[skill-development]]（新）
+  - entities/skilldag.md → [[skill-development]]（新）
+  - concepts/知识蒸馏.md → [[moonshot-ai]], [[openai]], [[xai]]（持续11周）
+- 🔴 红绿灯违规：24 页全部 confidence:high 标记，均未获得人类签字确认（连续 10 周）
+- 🔴 红绿灯违规：2 查询页（openclaw-web-search-tools, wechat-access-methods）AI 单方面归档，未走黄灯审批流程
+- 🔴 4 页面出站链接为 0（hermes-agent, feishu-api-access, 2 queries）
+- 🟡 索引占位页面：24 个条目指向不存在的文件（持续 11 周未解决，与上次完全一致）
+- 🟡 孤儿页：9 个页面无入站链接（book-to-skill, coze, feishu-api-access, langgraph, neuro-symbolic-ai, skilldag, soul-dot-md, 2 queries）— 与上周一致，持平
+- 🟡 大页面预警：feishu-api-access.md 191 行（连续 6 次 lint 提醒，接近分割阈值）
+- 🟡 16 个标签未正式纳入 SCHEMA.md 分类体系（ai-coding, api, browser, china, cli, cloud, configuration, customization, lab, model, multi-agent, optimization, orchestration, platform, research, technique — 持续 11 周未解决）
+- 🟢 无过期内容（全部 < 90 天）✅
+- 🟢 无矛盾/争讼标记 ✅
+- 🟢 无大页面超过 200 行 ✅
+- 🟢 无 frontmatter 字段缺失 ✅
+- 🟢 Log.md 条目数 21，无需轮转 ✅
+- 🟢 主要恶化：断链从 5 → 17（+12），stitch-2.0 被重新引入回退，新断链大量出现（knowledge-management, skill-development, gstack, instreet, agent-reach, bb-browser, harness-architecture）。孤儿页与上一 lint 持平（9 页），连续 3 次 lint 无改善。
+| - 建议：本周重点 1) 修复断链中最关键的：stitch-2.0（直接回退）、skill-development（多处引用）、openai（2处引用）、gstack（被 myharness 引用）2) 为 feishu-api-access/hermes-agent 补充出站链接 3) 确认 confidence:high 签名 4) 考虑拆 feishu-api-access（191行）
+
+## [2026-07-27] lint | 第9次健康检查 — 7天后
+- 扫描 24 个 Wiki 页面（16 entities + 6 concepts + 0 comparisons + 2 queries）+ 7 raw/ 文件
+- 🔴 **断链：17 个无效 [[wikilinks]]（12 个唯一目标），与上次完全一致 — 连续 8 周零改善**
+  - entities/anthropic.md → [[openai]]
+  - entities/book-to-skill.md → [[knowledge-management]], [[skill-development]]
+  - entities/claude-code.md → [[stitch-2.0]]
+  - entities/compound-engineering.md → [[knowledge-management]]
+  - concepts/llm-wiki-pattern.md → [[wikilink]]（元示例残留）
+  - entities/myharness.md → [[gstack]]×2（同页两次）
+  - concepts/neuro-symbolic-ai.md → [[harness-architecture]]
+  - entities/openclaw.md → [[instreet]]
+  - entities/opencli.md → [[agent-reach]], [[bb-browser]]
+  - entities/openspace.md → [[skill-development]]
+  - entities/skilldag.md → [[skill-development]]
+  - concepts/知识蒸馏.md → [[moonshot-ai]], [[openai]], [[xai]]
+- 🔴 **红绿灯违规：24 页全部 confidence:high 标记，均未获得人类签字确认（连续 11 周）**
+- 🔴 **红绿灯违规：2 查询页（openclaw-web-search-tools, wechat-access-methods）AI 单方面归档，未走黄灯审批流程**
+- 🔴 **5 页面出站链接不足 2 条：hermes-agent(0), feishu-api-access(0), hindsight(1), 2 queries(0) — 连续 6 次 lint 未修复**
+- 🟡 索引占位页面：24 个条目指向不存在的文件（持续 11 周未解决，与上次完全一致）
+- 🟡 孤儿页：9 个页面无入站链接（book-to-skill, coze, feishu-api-access, langgraph, neuro-symbolic-ai, skilldag, soul-dot-md, 2 queries）— 与上次一致，持平
+- 🟡 大页面预警：feishu-api-access.md 190 行（连续 7 次 lint 提醒，接近分割阈值）
+- 🟡 16 个标签未正式纳入 SCHEMA.md 分类体系（ai-coding, api, browser, china, cli, cloud, configuration, customization, lab, model, multi-agent, optimization, orchestration, platform, research, technique — 持续 11 周未解决）
+- 🟡 2 个 raw/ 文件 sha256 与当前正文不匹配：hermes-full-config-guide.md, hermes-llm-wiki-实战-2026-04-17.md（与之前一致，疑似摘要计算方式偏离，未提示内容实际变化）
+- 🟢 无过期内容（全部 < 90 天）✅
+- 🟢 无矛盾/争讼标记 ✅
+- 🟢 无大页面超过 200 行 ✅
+- 🟢 无 frontmatter 字段缺失 ✅
+- 🟢 Log.md 条目数 22，无需轮转 ✅
+- 🟢 知识库文件数稳定（245 篇），Wiki 页面数稳定（24）— 自 6/4 后无新来源摄入
+- 🟢 主要趋势：所有指标与 7/20 lint 完全一致 — 无恶化亦无改善。断链 17 处/孤儿 9 页/红绿灯违规/索引占位全部持续零改善，系统进入稳态停滞
+| 严重警告：所有 5 类 🔴 问题已连续 11 周零修复。当前 Wiki 的维护负债持续积累，每周 lint 仅报告但不产生任何修复动作。建议本周采取行动：1) 新建 openai/skill-development/gstack 等 5 个高频引用目标页 2) 为 hermes-agent/feishu-api-access 补充出站链接 3) 确认 24 页 confidence:high 的签字 4) 拆 feishu-api-access（190 行→拆分）
