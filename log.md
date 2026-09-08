@@ -328,3 +328,137 @@
 - 🟢 知识库文件数稳定（245 篇），Wiki 页面数稳定（24）— 自 6/4 后无新来源摄入
 - 🟢 主要趋势：所有指标与 7/20 lint 完全一致 — 无恶化亦无改善。断链 17 处/孤儿 9 页/红绿灯违规/索引占位全部持续零改善，系统进入稳态停滞
 | 严重警告：所有 5 类 🔴 问题已连续 11 周零修复。当前 Wiki 的维护负债持续积累，每周 lint 仅报告但不产生任何修复动作。建议本周采取行动：1) 新建 openai/skill-development/gstack 等 5 个高频引用目标页 2) 为 hermes-agent/feishu-api-access 补充出站链接 3) 确认 24 页 confidence:high 的签字 4) 拆 feishu-api-access（190 行→拆分）
+
+## [2026-08-03] lint | 第10次健康检查 — 每周例行
+- 扫描 24 个 Wiki 页面（16 entities + 6 concepts + 0 comparisons + 2 queries）+ 7 raw/ 文件
+- 🔴 **断链：17 个无效 [[wikilinks]]（12 个唯一目标），与上次完全一致 — 连续 11 周零改善**
+  - entities/anthropic.md → [[openai]]
+  - entities/book-to-skill.md → [[skill-development]], [[knowledge-management]]
+  - entities/claude-code.md → [[stitch-2.0]]（回退残留）
+  - entities/compound-engineering.md → [[knowledge-management]]
+  - entities/myharness.md → [[gstack]]×2（同页两次）
+  - entities/openclaw.md → [[instreet]]
+  - entities/opencli.md → [[agent-reach]], [[bb-browser]]
+  - entities/openspace.md → [[skill-development]]
+  - entities/skilldag.md → [[skill-development]]
+  - concepts/llm-wiki-pattern.md → [[wikilink]]（元示例残留，持续11周）
+  - concepts/neuro-symbolic-ai.md → [[harness-architecture]]
+  - concepts/知识蒸馏.md → [[moonshot-ai]], [[openai]], [[xai]]
+- 🔴 **红绿灯违规：24 页全部 confidence:high 标记，均未获得人类签字确认（连续 11 周）**
+- 🔴 **红绿灯违规：2 查询页（openclaw-web-search-tools, wechat-access-methods）AI 单方面归档，未走黄灯审批流程**
+- 🔴 **5 页面出站链接不足 2 条：hermes-agent(0), feishu-api-access(0), hindsight(1), 2 queries(0) — 连续 7 次 lint 未修复**
+- 🟡 索引占位页面：24 个条目指向不存在的文件（持续 11 周未解决，与上次完全一致）
+- 🟡 孤儿页：9 个页面无入站链接（book-to-skill, coze, feishu-api-access, langgraph, neuro-symbolic-ai, skilldag, soul-dot-md, 2 queries）— 连续 4 次 lint 持平
+- 🟡 大页面预警：feishu-api-access.md 191 行（连续 8 次 lint 提醒，接近分割阈值 200 行）
+- 🟡 16 个标签未正式纳入 SCHEMA.md 分类体系（ai-coding, api, browser, china, cli, cloud, configuration, customization, lab, model, multi-agent, optimization, orchestration, platform, research, technique — 持续 11 周未解决）
+- 🟢 raw/ 源漂移：7/7 文件 sha256 匹配 ✅（此前 2 个 mismatch 确认为计算方法差异，非真实漂移 — 本次修正结论）
+- 🟢 无过期内容（全部 ≤ 90 天）✅ — 注意：18 页 updated=2026-05-05，下周（8/10）将越过 90 天线
+- 🟢 无矛盾/争讼标记 ✅
+- 🟢 无大页面超过 200 行 ✅
+- 🟢 无 frontmatter 字段缺失 ✅
+- 🟢 Log.md 条目数 22，无需轮转 ✅
+- 🟢 知识库 .md 从 245 → 343（+98 篇）— 用户持续新增内容，但 Wiki 层自 6/4 起 11 周无新源摄入，编译层与原始层脱节加剧
+- 🟢 主要趋势：断链 17/孤儿 9/索引占位 24/红绿灯违规/出站链接不足 5 项 🔴 问题全部连续 11 周零修复，系统进入深度稳态停滞。本次无恶化亦无改善，唯一变化是 source drift 结论修正（0 而非 2）
+| 严重警告：🔴 问题已连续 11 周只报不修。建议本周行动：1) 新建 openai/skill-development/gstack/knowledge-management/harness-architecture 等高频引用目标页（可一次消除 10+ 断链）2) 为 hermes-agent/feishu-api-access 补出站链接 3) 对 24 页 confidence:high 做一次集中签字确认或降级 4) 拆分 feishu-api-access（191 行）5) 从知识库 343 篇新增中挑选 2-3 篇摄入 Wiki 层，恢复编译循环
+
+## [2026-08-17] lint | 第11次健康检查 — 每周例行
+- 扫描 24 个 Wiki 页面（16 entities + 6 concepts + 0 comparisons + 2 queries）+ 7 raw/ 文件
+- ✅ **本次修复（绿灯区自动处理）：**
+  - entities/hermes-agent.md 补出站链接 [[soul-dot-md]] + [[hindsight]]（0 → 2，达标）
+  - concepts/feishu-api-access.md 补出站链接 [[hermes-agent]] + [[openclaw]]（0 → 2，达标）
+  - index.md 头部修正：总页数 22 → 24，最后更新 2026-08-17
+  - 修复 llm-wiki-lint.py 脚本 sha256 计算 bug（缺少 body.lstrip() 导致 raw/ 全量误报漂移；修正后 7/7 匹配，确认无真实源漂移）
+- 🔴 **断链：17 个无效 [[wikilinks]]（12 个唯一目标），与上次完全一致 — 连续 12 周零改善**
+  - entities/anthropic.md → [[openai]]
+  - entities/book-to-skill.md → [[skill-development]], [[knowledge-management]]
+  - entities/claude-code.md → [[stitch-2.0]]
+  - entities/compound-engineering.md → [[knowledge-management]]
+  - entities/myharness.md → [[gstack]]×2（同页两次）
+  - entities/openclaw.md → [[instreet]]
+  - entities/opencli.md → [[agent-reach]], [[bb-browser]]
+  - entities/openspace.md → [[skill-development]]
+  - entities/skilldag.md → [[skill-development]]
+  - concepts/llm-wiki-pattern.md → [[wikilink]]（元示例残留，持续12周）
+  - concepts/neuro-symbolic-ai.md → [[harness-architecture]]
+  - concepts/知识蒸馏.md → [[moonshot-ai]], [[openai]], [[xai]]
+- 🔴 **红绿灯违规：24 页全部 confidence:high 标记，均未获得人类签字确认（连续 12 周）**
+- 🔴 **红绿灯违规：2 查询页（openclaw-web-search-tools, wechat-access-methods）AI 单方面归档，未走黄灯审批流程**
+- 🔴 **出站链接不足 2 条（剩余 3 页）：hindsight(1), 2 queries(0) — 较上次 5 页改善 2 页**
+- 🟡 **过期内容：18 页 updated=2026-05-05 已越过 90 天线（104 天）— 上次 lint 预测的越线已发生，本周新增**
+- 🟡 索引占位页面：24 个条目指向不存在的文件（持续 12 周未解决，与上次完全一致）
+- 🟡 孤儿页：8 个页面无入站链接（book-to-skill, coze, langgraph, skilldag, feishu-api-access, neuro-symbolic-ai, 2 queries）— 较上次 9 页改善 1 页（soul-dot-md 获入站链接）
+- 🟡 大页面预警：feishu-api-access.md 190 行（连续 9 次 lint 提醒，接近分割阈值 200 行）
+- 🟡 16 个标签未正式纳入 SCHEMA.md 分类体系（ai-coding, api, browser, china, cli, cloud, configuration, customization, lab, model, multi-agent, optimization, orchestration, platform, research, technique — 持续 12 周未解决）
+- 🟢 raw/ 源漂移：修正脚本 hash 计算方法后 7/7 匹配 ✅（确认零真实漂移；此前 7 个 mismatch 全部为计算方式差异）
+- 🟢 无矛盾/争讼标记 ✅
+- 🟢 无大页面超过 200 行 ✅
+- 🟢 无 frontmatter 字段缺失（Layer 2 范围）✅
+- 🟢 Log.md 条目数 23，无需轮转 ✅
+- 🟢 知识库 .md 从 343 → 366（+23 篇）— 用户持续新增内容，但 Wiki 层自 6/4 起 12 周无新源摄入，编译层与原始层脱节持续扩大
+- 🟢 主要趋势：断链 17 处连续 12 周零改善；出站链接不足从 5 页 → 3 页（首次改善）；孤儿 9 → 8（首次改善）；过期内容 0 → 18 页（新增恶化项）。红绿灯违规/索引占位仍零修复
+| 严重警告：断链/红绿灯/索引占位问题连续 12 周只报不修。建议本周行动：1) 新建 openai/skill-development/gstack/knowledge-management/harness-architecture 等高频引用目标页（可一次消除 10+ 断链）2) 对 24 页 confidence:high 做一次集中签字确认或降级 3) 拆分 feishu-api-access（190 行）4) 审阅 18 页过期内容（更新或归档）5) 从知识库 366 篇新增中挑选 2-3 篇摄入 Wiki 层，恢复编译循环
+
+## [2026-08-24] lint | 第12次健康检查 — 每周例行
+- 扫描 24 个 Wiki 页面（16 entities + 6 concepts + 0 comparisons + 2 queries）+ 7 raw/ 文件
+- 🔴 **断链：17 个无效 [[wikilinks]]（12 个唯一目标），与上次完全一致 — 连续 13 周零改善**
+  - entities/anthropic.md → [[openai]]
+  - entities/book-to-skill.md → [[skill-development]], [[knowledge-management]]
+  - entities/claude-code.md → [[stitch-2.0]]
+  - entities/compound-engineering.md → [[knowledge-management]]
+  - entities/myharness.md → [[gstack]]×2（同页两次）
+  - entities/openclaw.md → [[instreet]]
+  - entities/opencli.md → [[agent-reach]], [[bb-browser]]
+  - entities/openspace.md → [[skill-development]]
+  - entities/skilldag.md → [[skill-development]]
+  - concepts/llm-wiki-pattern.md → [[wikilink]]（元示例残留，持续13周）
+  - concepts/neuro-symbolic-ai.md → [[harness-architecture]]
+  - concepts/知识蒸馏.md → [[moonshot-ai]], [[openai]], [[xai]]
+- 🔴 **红绿灯违规：24 页全部 confidence:high 标记，均未获得人类签字确认（连续 13 周）**
+- 🔴 **红绿灯违规：2 查询页（openclaw-web-search-tools, wechat-access-methods）AI 单方面归档，未走黄灯审批流程**
+- 🔴 **出站链接不足 2 条（剩余 3 页）：hindsight(1), 2 queries(0) — 与上次持平**
+- 🟡 **过期内容：16 页 updated=2026-05-05 已越过 90 天线（111 天）— 较上次 18 页改善 2 页（hermes-agent/feishu-api-access 于 8/17 更新出线）**
+- 🟡 索引占位页面：24 个条目指向不存在的文件（持续 13 周未解决，与上次完全一致）
+- 🟡 孤儿页：8 个页面无入站链接（book-to-skill, coze, langgraph, skilldag, feishu-api-access, neuro-symbolic-ai, 2 queries）— 与上次持平
+- 🟡 大页面预警：feishu-api-access.md 190 行（连续 10 次 lint 提醒，接近分割阈值 200 行）
+- 🟡 16 个标签未正式纳入 SCHEMA.md 分类体系（ai-coding, api, browser, china, cli, cloud, configuration, customization, lab, model, multi-agent, optimization, orchestration, platform, research, technique — 持续 13 周未解决）
+- 🟢 raw/ 源漂移：7/7 文件 sha256 匹配 ✅（零真实漂移）
+- 🟢 无矛盾/争讼标记 ✅
+- 🟢 无大页面超过 200 行 ✅
+- 🟢 无 frontmatter 字段缺失（Layer 2 范围）✅
+- 🟢 Log.md 条目数 24，无需轮转 ✅
+- 🟢 知识库 .md 从 366 → 370（+4 篇）— 用户持续新增内容，但 Wiki 层自 6/4 起 13 周无新源摄入，编译层与原始层脱节持续扩大
+- 🟢 主要趋势：断链 17 连续 13 周零改善；孤儿 8/出站不足 3 页 与上次持平；过期内容 18 → 16（改善 2 页）；红绿灯违规/索引占位仍零修复
+| 严重警告：🔴 问题已连续 13 周只报不修。建议本周行动：1) 新建 openai/skill-development/gstack/knowledge-management/harness-architecture 等高频引用目标页（可一次消除 10+ 断链）2) 对 24 页 confidence:high 做一次集中签字确认或降级 3) 拆分 feishu-api-access（190 行）4) 审阅 16 页过期内容（更新或归档）5) 从知识库 370 篇新增中挑选 2-3 篇摄入 Wiki 层，恢复编译循环
+
+## [2026-09-07] lint | 第13次健康检查 — 每周例行
+- 扫描 24 个 Wiki 页面（16 entities + 6 concepts + 0 comparisons + 2 queries）+ 7 raw/ 文件（注：8/31 一轮缺失，本次与 8/24 第12次间隔两周）
+- 🔴 **断链：17 个无效 [[wikilinks]]（12 个唯一目标），与第12次完全一致 — 连续 14 周零改善**
+  - entities/anthropic.md → [[openai]]
+  - entities/book-to-skill.md → [[skill-development]], [[knowledge-management]]
+  - entities/claude-code.md → [[stitch-2.0]]
+  - entities/compound-engineering.md → [[knowledge-management]]
+  - entities/myharness.md → [[gstack]]×2（同页两次）
+  - entities/openclaw.md → [[instreet]]
+  - entities/opencli.md → [[agent-reach]], [[bb-browser]]
+  - entities/openspace.md → [[skill-development]]
+  - entities/skilldag.md → [[skill-development]]
+  - concepts/llm-wiki-pattern.md → [[wikilink]]（元示例残留）
+  - concepts/neuro-symbolic-ai.md → [[harness-architecture]]
+  - concepts/知识蒸馏.md → [[moonshot-ai]], [[openai]], [[xai]]
+- 🔴 **红绿灯违规：24 页全部 confidence:high 标记，均未获得人类签字确认（连续 14 周）**
+- 🔴 **红绿灯违规：2 查询页（openclaw-web-search-tools, wechat-access-methods）AI 单方面归档，未走黄灯审批流程**
+- 🔴 **出站链接不足 2 条（剩余 3 页）：hindsight(1), 2 queries(0) — 与上次持平**
+- 🟡 **过期内容：22/24 页越过 90 天线 — 较上次 16 页新增 6 页（llm-wiki-pattern/book-to-skill/compound-engineering/coze/langgraph/skilldag，updated=2026-06-04 已 95 天；另 16 页 updated=2026-05-05 已 125 天）**
+- 🟡 索引占位页面：24 个条目指向不存在的文件（playwright-scraper/obsidian-direct/agent-reach/skywork-ppt/zread-cli/news-aggregator/last30days-cn/control-center/bb-browser/stitch-2.0/free-code/gstack/instreet/clawdbot/agent-memory-system/skill-development/harness-architecture/workflow-automation/retrospective-methods/ai-coding-practice/agent-design-principles/knowledge-management/harness-comparison/gstack-vs-ce — 持续 14 周未解决）
+- 🟡 索引重复条目：4 个实体在 index.md 出现 2 次（opencli, claude-code, coze, book-to-skill 跨章节重复列出）
+- 🟡 孤儿页：8 个页面无入站链接（book-to-skill, coze, langgraph, skilldag, feishu-api-access, neuro-symbolic-ai, 2 queries）— 与上次持平
+- 🟡 大页面预警：feishu-api-access.md 191 行（连续 11 次 lint 提醒，接近分割阈值 200 行）
+- 🟡 16 个标签未正式纳入 SCHEMA.md 分类体系（ai-coding, api, browser, china, cli, cloud, configuration, customization, lab, model, multi-agent, optimization, orchestration, platform, research, technique — 持续 14 周未解决）
+- 🟢 raw/ 源漂移：7/7 文件 sha256 匹配 ✅（零真实漂移）
+- 🟢 无矛盾/争讼标记 ✅
+- 🟢 无大页面超过 200 行 ✅
+- 🟢 无 frontmatter 字段缺失（Layer 2 范围）✅
+- 🟢 Log.md 条目数 25，无需轮转 ✅
+- 🟢 知识库 .md 从 370 → 379（+9 篇）— 用户持续新增内容，但 Wiki 层自 6/4 起 13 周无新源摄入，编译层与原始层脱节持续扩大
+- 🟢 主要趋势：断链 17/孤儿 8/出站不足 3 页/红绿灯违规/索引占位 24 与上次完全一致；过期内容 16 → 22（+6 页新增恶化项）；零修复状态连续 14 周
+| 严重警告：🔴 问题连续 14 周只报不修，且过期内容首次扩大至 22/24 页。建议本周行动：1) 新建 openai/skill-development/gstack/knowledge-management/harness-architecture 等高频引用目标页（可一次消除 10+ 断链；知识库已有 gstack/instreet/openai/xai 等内容素材可支撑）2) 对 24 页 confidence:high 做一次集中签字确认或降级 3) 拆分 feishu-api-access（191 行）4) 审阅 22 页过期内容（更新或归档）5) 从知识库 379 篇新增中挑选 2-3 篇摄入 Wiki 层，恢复编译循环

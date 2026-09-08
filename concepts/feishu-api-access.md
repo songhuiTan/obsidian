@@ -1,7 +1,7 @@
 ---
 title: 飞书文档访问方法
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-08-17
 type: concept
 tags: [integration, tool, api, workflow]
 sources:
@@ -23,7 +23,7 @@ confidence: high
 
 ## 路径一：Hermes feishu-doc Skill（推荐）
 
-Hermes Agent 内置了 `feishu-doc` 工具，通过 `feishu_doc` 单一接口操作飞书文档。
+Hermes Agent 内置了 `feishu-doc` 工具，通过 `feishu_doc` 单一接口操作飞书文档。相关背景见 [[hermes-agent]]。
 
 ### 读取文档
 
@@ -163,7 +163,7 @@ curl -s "https://open.feishu.cn/open-apis/docx/v1/documents/{token}/blocks" \
 
 ## 路径四：OpenClaw feishu-lark Skill
 
-OpenClaw 生态中有对应的技能包，但**仅包含 SKILL.md 说明文档，没有实际工具实现**。实际读写仍需通过 API 或 Hermes Skill。
+OpenClaw 生态中有对应的技能包，但**仅包含 SKILL.md 说明文档，没有实际工具实现**。实际读写仍需通过 API 或 Hermes Skill。框架背景见 [[openclaw]]。
 
 ```bash
 npx skills add openclaudia/openclaudia-skills@feishu-lark -g -y

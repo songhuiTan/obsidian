@@ -1,7 +1,7 @@
 ---
 title: Hermes Agent
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-08-17
 type: entity
 tags: [agent-framework, open-source, tool, cli]
 sources:
@@ -30,7 +30,7 @@ Hermes Agent 是 Nous Research 在 2026 年推出的开源自改进 AI Agent（M
 - **长期**：Honcho 用户建模（跨会话构建偏好画像）
 
 ### 3. 用户模型与个性化
-通过 `SOUL.md` 全局人格文件和项目级上下文文件深度定制。越用越懂你的写作风格、代码偏好、技术栈。
+通过 [[soul-dot-md|SOUL.md]] 全局人格文件和项目级上下文文件深度定制。越用越懂你的写作风格、代码偏好、技术栈。
 
 ## 能力全景
 
@@ -47,7 +47,7 @@ Hermes Agent 是 Nous Research 在 2026 年推出的开源自改进 AI Agent（M
 | 模块 | 裸装 | 满配方案 |
 |------|------|---------|
 | 人格定义 | 无 | `SOUL.md` 定义人格特质、工作风格、专业领域 |
-| 长期记忆 | MEMORY.md（~2200字符上限） | **Hindsight** 自动提取、知识图谱、云端无上限 |
+| 长期记忆 | MEMORY.md（~2200字符上限） | **[[hindsight|Hindsight]]** 自动提取、知识图谱、云端无上限 |
 | 网页抓取 | 无 | Jina Reader + Crawl4AI + Scraping + Camoufox |
 | 搜索能力 | 无 | Tavily（1000次/月免费）+ DuckDuckGo（无限免费） |
 | 文档处理 | 仅支持纯文本 | Pandoc（万能格式转换）+ Marker（PDF高精度） |

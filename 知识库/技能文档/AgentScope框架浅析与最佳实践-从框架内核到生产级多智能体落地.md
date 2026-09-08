@@ -62,11 +62,11 @@ Agent.reply_stream(inputs)
 
 ### 6️⃣ Workspace 层 —— 三种后端
 
-| 后端 | 场景 |
-|------|------|
-| `LocalWorkspace` | 开发调试 |
-| `DockerWorkspace` | 代码执行沙箱 |
-| `E2BWorkspace` | 云端沙箱，长任务 offload |
+| 后端                | 场景               |
+| ----------------- | ---------------- |
+| `LocalWorkspace`  | 开发调试             |
+| `DockerWorkspace` | 代码执行沙箱           |
+| `E2BWorkspace`    | 云端沙箱，长任务 offload |
 
 慢工具 offload 到后台，先给模型 synthetic result，完成后再注入上下文——避免单慢 I/O 卡死 SSE。
 
@@ -132,10 +132,10 @@ Supervisor + 2 个 Sub Agent，接 MCP Server 处理业务：
 
 ## 五、选型建议
 
-| 场景 | 推荐框架 | 理由 |
-|------|---------|------|
-| 快速 PoC、链式调用为主 | LangChain | 生态最大 |
-| 完全自主、玩法型 | AutoGPT / CrewAI | 自由度 |
+| 场景                                 | 推荐框架             | 理由                            |
+| ---------------------------------- | ---------------- | ----------------------------- |
+| 快速 PoC、链式调用为主                      | LangChain        | 生态最大                          |
+| 完全自主、玩法型                           | AutoGPT / CrewAI | 自由度                           |
 | **生产级、分布式、Java 微服务嵌入、多 Agent 高并发** | ✅ **AgentScope** | Actor 模型 + K8s + A2A + Studio |
 
 判断信号：
