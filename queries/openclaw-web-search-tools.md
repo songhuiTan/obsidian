@@ -71,3 +71,8 @@ confidence: high
 | 深度抓取任意网站 | Playwright Scraper |
 | 生产级批量抓取 | Apify |
 | AI Agent 想直接操控浏览器 | BB-Browser + MCP |
+
+## 相关页面
+
+- [[openclaw]] — 本选型的宿主平台，工具均可作为 OpenClaw skill 接入
+- [[opencli]] — 表中"实时热榜/趋势"推荐项，浏览器桥接命令行工具

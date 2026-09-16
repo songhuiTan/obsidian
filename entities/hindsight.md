@@ -60,3 +60,4 @@ hermes memory status
 ## 相关实体
 
 - [[hermes-agent]] — 通过 Hindsight 增强长期记忆能力
+- [[openclaw]] — 同为 Agent 生态的 [[agent-orchestration|编排]] 语境下常见的记忆方案对比对象
