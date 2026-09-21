@@ -53,12 +53,17 @@ npm install -g @einsia/agent-git
 
 ## 实战演示：三个 Agent 接力开发 3D 网站
 
-作者以自己的 3D 个人网站为试验田，完整演示跨 Agent 接力：
+作者以自己的 3D 个人网站为试验田，完整演示跨 Agent 接力（第一版发布后读者留言贡献了不少创意）：
+
+![第一版发布后读者留言创意](../assets/2026-09-21-AgentGit/img_004.png)
 
 1. **Wesight 安装并头脑风暴**——把 AgentGit 官方安装指令交给 Wesight 自己完成安装，然后让它分析网站还能加什么功能（昼夜天气循环、NPC 漫游、季节皮肤等）。
 2. **Codex 读 Session 接力实现**——把 Wesight 的对话保存到 AgentGit，Codex 读取 Session 后给出星空、流星实现方案并落地；场景开始跟随现实时间变化。
 3. **额度耗尽换 Mimo**——Codex 额度见底后直接切 Mimo，Mimo 读完 Codex 留下的进度和决策直接续写访客留言板。
 4. **朋友协作**——分享 Session 给朋友（编辑权限），朋友的 Agent 接入后给网站新增「喷泉广场占座」功能（小精灵占座会提示"这座有人坐了，换一张吧"），全程作者实时可见。
+
+![喷泉广场占座功能](../assets/2026-09-21-AgentGit/img_015.png)
+
 5. **Hub 复用**——在 Hub 搜到「足迹星图」案例，让 Codex 读取该公开 Session 作参考，直接给自己的网站复刻了同款功能；作者随后也把足迹星图的制作过程公开回 Hub。
 
 ![Wesight 分析出的功能方案列表](../assets/2026-09-21-AgentGit/img_005.png)
