@@ -63,7 +63,25 @@ npm install -g @einsia/agent-git
 
 ![Wesight 分析出的功能方案列表](../assets/2026-09-21-AgentGit/img_005.png)
 
+![Codex 给出的实现方案](../assets/2026-09-21-AgentGit/img_006.png)
+
+![AgentGit 支持的 Agent 列表（文章口径含 Hermes）](../assets/2026-09-21-AgentGit/img_007.png)
+
+![访客星空与流星效果](../assets/2026-09-21-AgentGit/img_008.png)
+
+![额度见底后切换 Mimo](../assets/2026-09-21-AgentGit/img_009.png)
+
+![Mimo 接手后的访客留言板](../assets/2026-09-21-AgentGit/img_010.png)
+
 ## 关键洞察
+
+![Session 存入指定仓库](../assets/2026-09-21-AgentGit/img_011.png)
+
+![仓库中保存的 Session 列表](../assets/2026-09-21-AgentGit/img_012.png)
+
+![Session 分享权限设置（只读/编辑）](../assets/2026-09-21-AgentGit/img_013.png)
+
+![朋友的 Agent 接入并实时修改（Remote Control）](../assets/2026-09-21-AgentGit/img_014.png)
 
 - **Agent 时代，"过程"开始比结果更值钱**——看到一个惊艳的案例，比起结果，更有价值的是需求怎么提、哪里踩过坑、为什么这样改、想法怎么一步步落地。这些藏在聊天记录里的经验终于能被保存、复用。
 - **换 Agent 不再像给新人重新入职培训**——以前每次换 Agent 都像新员工入职，现在更像"把工位、资料和待办直接交过去"，省掉大量重复解释和重新理解项目的成本。
@@ -71,6 +89,12 @@ npm install -g @einsia/agent-git
 - 作者感慨的点睛之笔：**"当这些过程可以分享、交接和接力，很多事情就不用每个人都从零踩一遍坑。"**
 
 ## 战略分析
+
+![Hub 中搜索公开 Session 案例](../assets/2026-09-21-AgentGit/img_016.png)
+
+![「足迹星图」参考 Session](../assets/2026-09-21-AgentGit/img_017.png)
+
+![足迹星图成品效果](../assets/2026-09-21-AgentGit/img_018.png)
 
 ### 与现有工具链的对照
 
@@ -99,5 +123,9 @@ AgentGit 与现有体系（Hermes Agent + Obsidian 知识库 + TencentDB Memory 
 
 ## 归档日志
 
+![作者公开足迹星图制作过程](../assets/2026-09-21-AgentGit/img_019.png)
+
+![Hub 上公开的 Session，可被搜索复用](../assets/2026-09-21-AgentGit/img_020.png)
+
 - 2026-09-21 归档。Firecrawl 抓取正文 + GitHub API 核实仓库（157⭐/16 fork/MIT/Rust，2026-09-01 创建，发布前 20 天开源，持续活跃）；README 补充安装细节与 `@einsia/agentgit` 旧包警告。
-- 图片 9/21 张即时下载成功；余 12 张遭微信 CDN 频控（243B 占位图），后台慢速重试补齐中。
+- 图片下载一波三折：微信 CDN 对脚本 UA 与 fetch() 通道频控（返回 243B 占位图，curl/浏览器 fetch/Firecrawl stealth 出口均被拦），最终以「文章页内手动交换 data-src→src 强制 `<img>` 通道加载 + CDP `Page.getResourceContent` 提取缓存字节」组合拳取回全部 21 张（含封面），字节数与先期成功的锚点逐一吻合。
