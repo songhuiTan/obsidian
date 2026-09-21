@@ -495,3 +495,36 @@
 - 🟢 主要趋势：全部 🔴/🟡 指标与第13次完全一致，零恶化、零改善。冻结状态进入第 15 周
 - 备注：lint 脚本对根目录 5 个用户文件（README.md, zai.md, 写作agent.md, 教程指南.md, 2026-06-02.md）报 frontmatter 缺失/孤儿/未入索引 — 属 Layer 1 用户内容，按 Option B 规则不计为 Wiki 问题（README 中 3 个断链为模板占位符，同理排除）
 | 判定升级：连续 15 周只报不修，周报本身已沦为噪音。给出三个可执行选项供决策：**A. 一次性修复包**（绿灯区授权内，AI 执行）：新建 12 个高频目标页消除全部 17 断链 + 补 3 页出站链接 + 拆分 feishu-api-access + 清理索引占位与重复 → 可清零全部 🔴 断链和大部分 🟡；**B. 红灯签字**（仅小谭）：对 24 页 confidence:high 集中确认或批量降级为 medium，并追认 2 个查询页；**C. 降频止损**：若 Wiki 已暂停使用，将本 lint 降为每月一次或暂停，停止每周同款报告。三选一即可打破停滞
+
+## [2026-09-21] lint | 第15次健康检查 — 每周例行
+- 扫描 24 个 Wiki 页面（16 entities + 6 concepts + 0 comparisons + 2 queries）+ 7 raw/ 文件 + 知识库 390 篇
+- **⚠️ 度量修正：[[wikilink]] 断链为误报** — `concepts/llm-wiki-pattern.md` L41 的 `[[wikilink]]` 位于行内代码（反引号）中，Obsidian 不渲染为链接，非真实断链。已核实全部 16 处其余断链均无反引号包裹，均为真实断链。历史断链数 17 → **16（11 个唯一目标）**，前 14 次 lint 该项均多计 1 处
+- 🔴 **断链：16 个无效 [[wikilinks]]（11 个唯一目标），与第14次实质一致 — 冻结状态进入第 16 周**
+  - entities/anthropic.md → [[openai]]
+  - entities/book-to-skill.md → [[skill-development]], [[knowledge-management]]
+  - entities/claude-code.md → [[stitch-2.0]]
+  - entities/compound-engineering.md → [[knowledge-management]]
+  - entities/myharness.md → [[gstack]]×2（同页两次）
+  - entities/openclaw.md → [[instreet]]
+  - entities/opencli.md → [[agent-reach]], [[bb-browser]]
+  - entities/openspace.md → [[skill-development]]
+  - entities/skilldag.md → [[skill-development]]
+  - concepts/neuro-symbolic-ai.md → [[harness-architecture]]
+  - concepts/知识蒸馏.md → [[moonshot-ai]], [[openai]], [[xai]]
+  - 素材核查：知识库已具备 gstack（MyHarness构建思路 L19）、instreet（InStreet经验/ 3篇）、agent-reach + bb-browser（2026-06-10-GitHub-AI屠榜、2026-03-16-OpenCLI+BB-Browser）、stitch-2.0（Claude Code + Stitch 2.0 指南）等新建页所需源材料
+- 🔴 **红绿灯违规：24 页全部 confidence:high，均未获人类签字确认（连续 16 周）**
+- 🔴 **红绿灯违规：2 查询页（openclaw-web-search-tools, wechat-access-methods）AI 单方面归档，未走黄灯审批（连续 16 周）**
+- 🟡 **过期内容：22/24 页越过 90 天线（16 页 updated=2026-05-05 已 139 天；6 页 updated=2026-06-04 已 109 天）— 集合与上次一致**
+- 🟡 索引占位：24 个条目指向不存在的文件（清单同第13/14次）— 持续 16 周
+- 🟡 索引重复：4 实体跨章节重复（opencli, claude-code, coze, book-to-skill）
+- 🟡 孤儿页：7 个无入站链接（book-to-skill, coze, langgraph, skilldag, neuro-symbolic-ai, 2 queries）— feishu-api-access 上周修复后保持，**8 → 7 保持**
+- 🟡 feishu-api-access.md 191 行（连续 13 次预警，接近 200 行阈值）
+- 🟡 16 个标签未纳入 SCHEMA 分类体系（ai-coding, api, browser, china, cli, cloud, configuration, customization, lab, model, multi-agent, optimization, orchestration, platform, research, technique — 持续 16 周）
+- 🟢 出站链接不足：**0 页（上周修复 3 页全部保持，24/24 达标第二个周期）**
+- 🟢 raw/ 源漂移：独立复核 7/7 sha256 匹配 ✅（零真实漂移；lint 脚本对含数字键名 sha256 的 frontmatter 解析缺陷已识别，不影响结论）
+- 🟢 无矛盾/争讼标记 ✅；无 confidence:low ✅；无 >200 行页面 ✅；Layer 2 frontmatter 无缺字段 ✅
+- 🟢 Log 条目数 28（含本次），无需轮转 ✅
+- 🟢 知识库 .md 381 → 390（+9）— 用户新增持续，Wiki 层自 6/4 起 15+ 周无新源摄入，脱节继续扩大
+- 🟢 备注：知识库/ 内部存在独立 entities/concepts 子结构（corecoder, langgraph, agent-observability 等），与 vault 根 Wiki 层互不引用 — 属用户 Layer 1 内容，不计问题，但摄入时可作为现成素材
+- 趋势：断链（修正后 16）/过期 22/索引占位 24/红绿灯违规 连续第 16 周零变化；出站达标、孤儿 7 为保持项。A/B/C 决策（见第14次）仍待小谭选择，**本周为决策等待第 7 天**
+
