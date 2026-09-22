@@ -1,9 +1,18 @@
 ---
-title: "硬核 | 每步决策 385ms：Jev 模型爆火的背后，我把它接进两个真实系统，用实测数据告诉你它对于测试的真正价值在哪？（附完整 trace）"
-source: "测试开发实战（测试开发实战大刚）"
-source_url: "https://mp.weixin.qq.com/s/6dYYWKDwX2BGkv_pDMavsw"
-date: "2026-09-22"
-tags: [AI, Agent, 浏览器自动化, 决策模型, 测试开发]
+type: concept
+title: 硬核 | 每步决策 385ms：Jev 模型爆火的背后，我把它接进两个真实系统，用实测数据告诉你它对于测试的真正价值在哪？（附完整 trace）
+date: '2026-09-22'
+source: 测试开发实战（测试开发实战大刚）
+source_url: 'https://mp.weixin.qq.com/s/6dYYWKDwX2BGkv_pDMavsw'
+ingested_via: put_page
+ingested_at: '2026-09-22T10:14:32.676Z'
+source_kind: put_page
+tags:
+  - 决策模型
+  - 测试开发
+  - 浏览器自动化
+  - Agent
+  - AI
 ---
 
 # Jev 决策模型实测：jev-ultrafast 浏览器 Agent 每步 385ms
