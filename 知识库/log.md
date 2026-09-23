@@ -28,3 +28,10 @@
 - 已更新 index.md 反映所有新页面
 - 知识来源：269 篇技能文档归档（Layer 1）
 |
+## [2026-09-23] archive | FDE案例库-127条企业AI落地案例的可检索证据库
+- 来源: GitHub guminghao-avi/FDE-case-library (15⭐, MIT, 2026-09-19 开源, v0.2.0)
+- 归档方式: GitHub REST API + raw 文件读取 (未 clone), 全量分析 cases.json 532KB/127条
+- 文档: 技能文档/2026-09-23-FDE案例库-127条企业AI落地案例的可检索证据库.md
+- 图片: assets/2026-09-23-FDE案例库/img_001.png (首页截图 1440x1000)
+- 导航: 快速导航 企业级AI&AIOps +1, 总数 351→352; README 技能文档 334→335
+- 核心价值: analysis_boundary 字段级证据边界 + 六维详细度评分 + source_record 来源账本, 可借鉴进归档流程
