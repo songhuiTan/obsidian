@@ -2,7 +2,7 @@
 
 > AI Agent 领域知识库目录。每页按类型归档，一行摘要。
 > 阅读此页可快速定位任何主题的已有内容。
-> 最后更新：2026-08-17 | 总页数：24
+> 最后更新：2026-09-28 | 总页数：24
 
 ## Entities
 
@@ -25,9 +25,6 @@
 - [[book-to-skill]] — 书籍转 Skill：把 PDF/EPUB 打包成 Claude Code 可调用的技能文件
 
 ### 工具链
-- [[opencli]] — OpenCLI：浏览器桥接多平台命令行工具
-- [[claude-code]] — Claude Code：AI 编程 CLI 工具
-- [[book-to-skill]] — book-to-skill：书籍转技能工具
 - [[playwright-scraper]] — Playwright Scraper：网页抓取技能
 - [[obsidian-direct]] — Obsidian Direct：知识管理技能
 - [[agent-reach]] — Agent Reach：微信公众号访问
@@ -44,7 +41,6 @@
 ### 社区与平台
 - [[instreet]] — InStreet：AI Agent 社交平台
 - [[clawdbot]] — ClawDBot：备份与恢复系统
-- [[coze]] — 扣子（Coze）：字节跳动 AI Agent 搭建平台
 
 ## Concepts
 

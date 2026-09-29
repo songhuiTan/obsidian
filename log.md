@@ -528,3 +528,37 @@
 - 🟢 备注：知识库/ 内部存在独立 entities/concepts 子结构（corecoder, langgraph, agent-observability 等），与 vault 根 Wiki 层互不引用 — 属用户 Layer 1 内容，不计问题，但摄入时可作为现成素材
 - 趋势：断链（修正后 16）/过期 22/索引占位 24/红绿灯违规 连续第 16 周零变化；出站达标、孤儿 7 为保持项。A/B/C 决策（见第14次）仍待小谭选择，**本周为决策等待第 7 天**
 
+## [2026-09-28] lint | 第16次健康检查 — 每周例行
+- 扫描 24 个 Wiki 页面（16 entities + 6 concepts + 0 comparisons + 2 queries）+ 7 raw/ 文件 + 知识库 402 篇
+- ✅ **本次修复（绿灯区自动处理）：** index.md 清除 4 个跨章节重复条目（opencli / claude-code / book-to-skill / coze 均在"框架与平台"与"工具链/社区与平台"重复列出，保留首处）；头部最后更新 2026-08-17 → 2026-09-28。修复后验证：重复 0，占位条目数不变（24）
+- 🔴 **断链：16 个无效 [[wikilinks]]（11 个唯一目标），与第15次完全一致 — 冻结状态进入第 17 周**
+  - entities/anthropic.md → [[openai]]
+  - entities/book-to-skill.md → [[knowledge-management]], [[skill-development]]
+  - entities/claude-code.md → [[stitch-2.0]]
+  - entities/compound-engineering.md → [[knowledge-management]]
+  - entities/myharness.md → [[gstack]]×2（同页两次）
+  - entities/openclaw.md → [[instreet]]
+  - entities/opencli.md → [[agent-reach]], [[bb-browser]]
+  - entities/openspace.md → [[skill-development]]
+  - entities/skilldag.md → [[skill-development]]
+  - concepts/neuro-symbolic-ai.md → [[harness-architecture]]
+  - concepts/知识蒸馏.md → [[moonshot-ai]], [[openai]], [[xai]]
+- 🔴 **红绿灯违规：24 页全部 confidence:high，均未获人类签字确认（连续 17 周）**
+- 🔴 **红绿灯违规：2 查询页（openclaw-web-search-tools, wechat-access-methods）AI 单方面归档，未走黄灯审批（连续 17 周）**
+- 🟡 **过期内容：22/24 页越过 90 天线（16 页 updated=2026-05-05 已 146 天；6 页 updated=2026-06-04 已 116 天）— 集合与上次一致**
+- 🟡 索引占位：24 个条目指向不存在的文件（清单同第13-15次）— 持续 17 周
+- 🟡 孤儿页：7 个无入站链接（book-to-skill, coze, langgraph, skilldag, neuro-symbolic-ai, 2 queries）— 与上次持平
+- 🟡 feishu-api-access.md 190 行（连续 14 次预警，接近 200 行阈值）
+- 🟡 16 个标签未纳入 SCHEMA 分类体系（ai-coding, api, browser, china, cli, cloud, configuration, customization, lab, model, multi-agent, optimization, orchestration, platform, research, technique — 持续 17 周）
+- 🟡 **新发现：`知识库/知识库/` 嵌套目录**含 3 篇 9/24-9/25 文章（skillrecorder / laya-jev / kuhakucai），与 `知识库/技能文档/` 同日同主题文章 md5 不同（不同抓取版本，非精确重复）。属 Layer 1 用户内容，只报告不处理；建议小谭确认后自行删除嵌套目录
+- 🟢 出站链接不足：**0 页（24/24 达标，连续第 3 周保持）**
+- 🟢 raw/ 源漂移：7/7 sha256 匹配 ✅（零真实漂移）
+- 🟢 无矛盾/争讼标记 ✅；无 confidence:low ✅；无 >200 行页面 ✅
+- 🟢 frontmatter 完整性复核：19 页曾疑似缺 `sources` 为解析误报 — 实为 YAML 多行列表格式（`sources:` + 缩进 `- 项`），逐页人工核实全部存在，**零缺失 ✅**（自查脚本需支持多行 YAML，lint 主脚本无此问题）
+- 🟢 Log 条目数 29（含本次），无需轮转 ✅
+- 🟢 知识库 .md 390 → 402（+12）— 用户持续新增（本周含 dsh-ontology、OpenMausBot、SkillAdam 等），Wiki 层自 6/4 起 16+ 周无新源摄入，脱节继续扩大
+- 🟢 根目录 5 个用户文件（README.md, zai.md, 写作agent.md, 教程指南.md, 2026-06-02.md）被 lint 脚本报 frontmatter 缺失/孤儿/未入索引 — 属 Layer 1 用户内容，按 Option B 规则不计为 Wiki 问题（README 中 3 个断链为模板占位符，同理排除）
+- 趋势：断链 16 / 过期 22 / 索引占位 24 / 红绿灯违规 连续第 17 周零变化；索引重复 4 → 0（本周修复）。**A/B/C 决策（见第14次）等待第 14 天**
+|| 17 周冻结未破。重复项：A 修复包需新建 11 个目标页才能清零断链，属绿灯区但涉及大量内容写入，建议小谭先选 A/B/C 之一再动；B 红灯签字只需一次批量确认；C 降频可立即止损。决策不选，下周报告将与本周基本相同。
+
+
