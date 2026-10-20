@@ -1,7 +1,7 @@
 ---
 title: Hindsight
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-09-14
 type: entity
 tags: [tool, memory, cloud, integration]
 sources:

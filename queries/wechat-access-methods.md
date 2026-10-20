@@ -1,7 +1,7 @@
 ---
 title: Agent 访问微信公众号内容的3条路径
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-09-14
 type: query
 tags: [tool, integration, practice, tutorial]
 sources:

@@ -1,7 +1,7 @@
 ---
 title: OpenClaw 网络信息搜索工具选型
 created: 2026-05-05
-updated: 2026-05-05
+updated: 2026-09-14
 type: query
 tags: [tool, comparison, workflow, practice]
 sources:

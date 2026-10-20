@@ -562,3 +562,34 @@
 || 17 周冻结未破。重复项：A 修复包需新建 11 个目标页才能清零断链，属绿灯区但涉及大量内容写入，建议小谭先选 A/B/C 之一再动；B 红灯签字只需一次批量确认；C 降频可立即止损。决策不选，下周报告将与本周基本相同。
 
 
+## [2026-10-12] lint | 第17次健康检查 — 每周例行
+- 扫描 24 个 Wiki 页面（16 entities + 6 concepts + 0 comparisons + 2 queries）+ 7 raw/ 文件 + 知识库 406 篇
+- ✅ **本次修复（绿灯区自动处理）：** hindsight / openclaw-web-search-tools / wechat-access-methods 三页 `updated` 日期纠偏 — 9/14 补链接时未同步日期（违反 SCHEMA 更新规则），已改为 2026-09-14。过期页 22 → 19
+- 🔴 **断链：17 个无效 [[wikilinks]]（含 1 个行内代码误报，真实 16 处 / 11 个唯一目标），与第16次完全一致 — 冻结状态进入第 18 周**
+  - entities/anthropic.md → [[openai]]
+  - entities/book-to-skill.md → [[knowledge-management]], [[skill-development]]
+  - entities/claude-code.md → [[stitch-2.0]]
+  - entities/compound-engineering.md → [[knowledge-management]]
+  - entities/myharness.md → [[gstack]]×2（同页两次）
+  - entities/openclaw.md → [[instreet]]
+  - entities/opencli.md → [[agent-reach]], [[bb-browser]]
+  - entities/openspace.md → [[skill-development]]
+  - entities/skilldag.md → [[skill-development]]
+  - concepts/llm-wiki-pattern.md → [[wikilink]]（行内代码内，非真实断链，仅记录）
+  - concepts/neuro-symbolic-ai.md → [[harness-architecture]]
+  - concepts/知识蒸馏.md → [[moonshot-ai]], [[openai]], [[xai]]
+- 🔴 **红绿灯违规：24 页全部 confidence:high，均未获人类签字确认（连续 18 周）**
+- 🔴 **红绿灯违规：2 查询页（openclaw-web-search-tools, wechat-access-methods）AI 单方面归档，未走黄灯审批（连续 18 周）**
+- 🟡 **过期内容：19/24 页越过 90 天线（16 页 updated=2026-05-05 已 160 天；3 页 updated=2026-06-04 已 130 天）— 较上次 22 页改善 3 页（本次日期纠偏所致，非内容更新）**
+- 🟡 索引占位：24 个条目指向不存在的文件（清单同第13-16次）— 持续 18 周
+- 🟡 孤儿页：7 个无入站链接（book-to-skill, coze, langgraph, skilldag, neuro-symbolic-ai, 2 queries）— 与上次持平
+- 🟡 feishu-api-access.md 190 行（连续 15 次预警，接近 200 行阈值）
+- 🟡 16 个标签未纳入 SCHEMA 分类体系（ai-coding, api, browser, china, cli, cloud, configuration, customization, lab, model, multi-agent, optimization, orchestration, platform, research, technique — 持续 18 周）
+- 🟡 上周报告的 `知识库/知识库/` 嵌套目录已消失 — 用户已自行清理 ✅
+- 🟢 出站链接：24/24 达标，连续第 5 周保持
+- 🟢 raw/ 源漂移：7/7 匹配 ✅（主脚本 naive `body` 口径报 7 个 mismatch，经 strip 口径复核全部匹配 — 零真实漂移。脚本 hash 计算需统一为 `.strip()` 口径，与第11次发现同类）
+- 🟢 无矛盾/争讼标记 ✅；无 confidence:low ✅；无 >200 行页面 ✅；Layer 2 frontmatter 无缺字段 ✅；索引无重复条目 ✅
+- 🟢 Log 条目数 30（含本次），无需轮转 ✅
+- 🟢 知识库 .md 402 → 406（+4：AIHOT、Jev-SystemOne、Lightpanda、Hindsight-Vectorize、DSH、Strata、OntoQuery 等）— 用户持续新增，Wiki 层自 6/4 起 18+ 周无新源摄入，脱节继续扩大。注意：Hindsight-Vectorize（10/4）与 entities/hindsight.md、DSH 桌面 Agent（10/5）与 harness 主题直接相关，为现成摄入素材
+- 趋势：断链 16 / 索引占位 24 / 红绿灯违规 连续第 18 周零变化；过期 22 → 19（日期纠偏）；孤儿 7 持平。**A/B/C 决策（第14次提出）等待第 28 天，仍未选择**
+|| 18 周冻结未破，A/B/C 三选一（A=绿灯修复包清零断链；B=一次性签字确认 24 页 confidence:high + 追认 2 查询页；C=降频止损）已连续 4 次报告无回应。**降频止损即刻生效（不动 cron 计划本身）：自下次起，若扫描结果与本次完全一致（零修复、零新文件、零新问题），按 SILENT 规则不投递报告；有任何变化（含用户摄入新源、签字、新断链）则正常投递。**减少噪音直到收到 A/B/C 选择。
