@@ -35,3 +35,12 @@
 - 图片: assets/2026-09-23-FDE案例库/img_001.png (首页截图 1440x1000)
 - 导航: 快速导航 企业级AI&AIOps +1, 总数 351→352; README 技能文档 334→335
 - 核心价值: analysis_boundary 字段级证据边界 + 六维详细度评分 + source_record 来源账本, 可借鉴进归档流程
+
+## [2026-10-26] archive | PWA移动APP工作台提示词（飞书）
+- 来源: 飞书 wiki https://zcnv48kqce5a.feishu.cn/wiki/WU84wbYdgi3uylkYvOVc6LKVn5d (docx token XzYRdfZDfobaAox9WUwcJT3kn0M)
+- 归档方式: feishu-doc references/feishu-to-obsidian-archive.md — wiki get_node 取 obj_token → docx blocks API (7 块: 1 page + 4 text + 2 code)
+- 文档: 技能文档/2026-10-26-PWA移动APP工作台提示词.md
+- 图片: 无（原文无图无附件）
+- 导航: 快速导航 知识管理与归档 +1, 总数 363→364; README 技能文档 362→363
+- 核心价值: 两段式提示词结构（通用 PWA 8 条约束=可复用资产 / 岗位描述段=消耗品），附 PWA 技术规格核对清单
+- 备注: 原文岗位示例为「小学教师工作台」；通用段可直接换岗位复用
