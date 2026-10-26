@@ -121,3 +121,9 @@
 - 导航: 快速导航 视频归档 +1, 总数 365→366; README 技能文档 364→365
 - 关键发现: 作者评论区自述「花生壳是静态托管数据只能存本地，换云服务器才能挂数据库」
 - 三方案定位成表: 花生壳Drop vs StepPage vs Cloudflare/Vercel；生成层通用，分发层才需选
+
+## [2026-10-26] archive | answer-me-with-html：把 AI 的几百行回答变成一页 HTML（微信公众号·芋道源码）
+- 正文：技能文档/2026-10-25-answer-me-with-html-AI回答变一页HTML.md（10.4KB）
+- 封面：assets/2026-10-25-answer-me-with-html-AI回答变一页HTML/cover.jpg
+- 核实：GitHub API 4,435⭐/301fork/MIT，创建 2026-10-02，日更；本地 node v22.23.3 达标，~/.answer-me-with-html 未装
+- 索引：快速导航 +1（367 行）、README 366 篇
