@@ -44,3 +44,12 @@
 - 导航: 快速导航 知识管理与归档 +1, 总数 363→364; README 技能文档 362→363
 - 核心价值: 两段式提示词结构（通用 PWA 8 条约束=可复用资产 / 岗位描述段=消耗品），附 PWA 技术规格核对清单
 - 备注: 原文岗位示例为「小学教师工作台」；通用段可直接换岗位复用
+
+## [2026-10-26] archive | StepCode+StepPage 三端工作台（抖音视频）
+- 来源: 抖音 v.douyin.com/TQDrmzeCIgk → www.douyin.com/video/7694200099710192932 (李君陌, 2026-10-08 18:50, 20:58)
+- 归档方式: 轻路径 — 页面 innerText 一次提取成功（章节要点8段含时间戳 + 元数据 + 评论），未做 ASR
+- 官方口径补充: platform.stepfun.ai/docs/en/step-code/quickstart + .../reference/steppage + github.com/stepfun-ai/Step-Code (实测 1019⭐/68fork, MIT)
+- 文档: 技能文档/2026-10-08-StepCode-StepPage-三端工作台-新手手搓手机可用工作台.md
+- 图片: assets/2026-10-08-StepCode-StepPage-三端工作台/cover.jpg (页面 lark:url:video_cover_image_url, 440x330)
+- 导航: 快速导航 视频归档 +1, 总数 364→365; README 技能文档 363→364
+- 关键判断: 与 2026-10-26-PWA移动APP工作台提示词 构成上下游（生成层 vs 分发层）；视频口播"IP服务"实为 StepPage
