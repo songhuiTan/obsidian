@@ -202,6 +202,10 @@
   },
   "active": "41a3b6faae41a59f",
   "lastOpenFiles": [
+    "知识库/技能文档/2026-11-02-疯掉啦15K-Star的LiveKit-Agents.md",
+    "知识库/assets/2026-11-02-LiveKit-Agents-实时语音Agent框架/img_002.jpg",
+    "知识库/assets/2026-11-02-LiveKit-Agents-实时语音Agent框架/img_001.jpg",
+    "知识库/assets/2026-11-02-LiveKit-Agents-实时语音Agent框架",
     "知识库/技能文档/2026-10-30-Tabbit-CLI-Agent浏览器工具设计与实践.md",
     "知识库/技能文档/2026-10-30-google-agents-cli-教coding-agent部署云上Agent.md",
     "知识库/assets/2026-10-30-tabbit-cli/img_001.jpg",
@@ -229,14 +233,11 @@
     "知识库/技能文档/2026-10-23-REA让Claude逆向分析应用-从Electron到Native-Binary.md",
     "知识库/assets/2026-10-23-REA逆向分析MCP/img_005.png",
     "知识库/assets/2026-10-23-REA逆向分析MCP/img_004.png",
-    "知识库/assets/2026-10-23-REA逆向分析MCP/img_003.png",
-    "知识库/assets/2026-10-23-REA逆向分析MCP/img_002.png",
     "知识库/assets/2026-10-23-REA逆向分析MCP",
     "知识库/技能文档/2026-10-23-help-me-understand-让读者真正看懂的技能-STE原则与三形态交付.md",
     "知识库/技能文档/2026-10-22-Raven一个入口管所有Agent-HarnessOfHarnesses.md",
     "知识库/技能文档/2026-10-22-zg一个命令替代grep-阿里开源Agent检索层.md",
     "知识库/技能文档/2026-10-22-一个任务一个worktree-Orca多Agent并行10万星.md",
-    "知识库/assets/2026-10-22-Orca",
     "知识库/技能文档/2026-10-22-从LOOP到图探索-AutoResearch自进化系统架构演进.md",
     "知识库/技能文档/2026-10-22-为什么越来越多人用Quarkus.md",
     "知识库/知识库/技能文档/2026-10-21-context-mode上下文管理-mcp加hooks三层管道.md",
@@ -248,7 +249,6 @@
     "未命名 2.canvas",
     "知识库/技能文档/2026-10-18-e2e-Agent驱动端到端测试-写目标不写步骤.md",
     "知识库/技能文档/2026-10-11-两个亿的操盘手把自己蒸馏成48个Skill-XYskill.md",
-    "知识库/技能文档/2026-10-20-ego-lite-Windows版上线-Agent专用浏览器.md",
     "未命名 1.canvas",
     "未命名.canvas"
   ]
