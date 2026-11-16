@@ -626,3 +626,80 @@
 - ⚠️ **脱节扩大：知识库 430 篇 vs Wiki 24 页。Wiki 层自 2026-06-04 起 21 周零摄入。** 本周新增中与现有页面强相关的现成素材：`2026-10-22-Raven一个入口管所有Agent-HarnessOfHarnesses`（→ harness-architecture / deerflow-2.0）、`2026-10-22-一个任务一个worktree-Orca多Agent并行10万星`（→ agent-orchestration）、`2026-10-30-Tabbit-CLI / 2026-10-20-ego-lite`（→ opencli / bb-browser）、`2026-10-15-腾讯Octop`（→ 新 entity 候选）
 - 趋势：断链 16 / 索引占位 24 / 红绿灯违规 连续第 19 周零变化；过期 19 持平；孤儿 7 持平；raw 漂移 0 → 2（**唯一新增问题项**）。**A/B/C 决策（第 14 次提出）等待第 49 天，仍未选择**
 - 结论：Wiki 层已 5 个月完全静止，全部指标冻结。三个可立即止损的动作仍是：(A) 绿灯修复包清零 16 处断链；(B) 一次性签字确认 24 页 confidence + 追认 2 查询页；(C) 降频/暂停周报。本次新增第 4 项待决：(D) raw/ 2 个漂移源的处理方式。**若下一周与本周逐项一致，将按既定 SILENT 规则静默不投递。**
+
+## [2026-11-09] lint | 第19次健康检查 — 每周例行（降频规则：仅提示层变化，Wiki 层零改动）
+- 扫描 24 个 Wiki 页面（16 entities + 6 concepts + 0 comparisons + 2 queries）+ 7 raw/ 文件 + 知识库 441 篇
+- ⚖️ **降频规则判定：Wiki 层逐项与第 18 次一致（24 页 md5 全等，最近修改时间仍停在 10-12）；本次变化全在 Layer 1 提示层 + 3 项新发现，按规则简报投递，不重复展开冻结项**
+- 🔴 **断链：11 个唯一目标 / 16 处引用 — 冻结第 20 周，与第 16–18 次逐字一致**
+  - entities/anthropic.md → [[openai]]
+  - entities/book-to-skill.md → [[skill-development]], [[knowledge-management]]
+  - entities/claude-code.md → [[stitch-2.0]]
+  - entities/compound-engineering.md → [[knowledge-management]]
+  - entities/myharness.md → [[gstack]]×2（同页重复）
+  - entities/openclaw.md → [[instreet]]
+  - entities/opencli.md → [[agent-reach]], [[bb-browser]]
+  - entities/openspace.md → [[skill-development]]
+  - entities/skilldag.md → [[skill-development]]
+  - concepts/neuro-symbolic-ai.md → [[harness-architecture]]
+  - concepts/知识蒸馏.md → [[moonshot-ai]], [[openai]], [[xai]]
+- 🔴 **红绿灯违规（红灯）：24/24 页 `confidence: high`，无一获人类签字确认（连续 20 周）**
+- 🔴 **红绿灯违规（黄灯）：2 查询页（openclaw-web-search-tools / wechat-access-methods）AI 单方面归档，未走审批（连续 20 周）**
+- 🔴 **raw/ 真实源漂移 — 第 19 次发现后仍待决（连续 2 周）：** `hermes-full-config-guide.md`、`hermes-llm-wiki-实战-2026-04-17.md` 存储 sha256 与正文不符；本次已定位根因确认：两文件 frontmatter 下方紧接**第二层完整 frontmatter**（title/author/date/source），抓取时把源文章自带 YAML 头一并写入正文，故 hash 必然不符。其余 5 个 raw 文件 strip 口径全部匹配 ✅。**raw/ 属红灯区，AI 不修改 — 需小谭二选一：①删除正文第二层 frontmatter 后重算 sha256；②重新抓取覆盖**
+- 🟡 **新发现 · Wiki 层 index.md「知识库来源映射」表严重过期：** 表内写 `技能文档 36`、`教程指南 3`、`复盘日记 3`，实际为 `技能文档 380`、`教程指南 5`、`复盘日记 2`；另列出一个已不存在的 `技能文档/开源工具/` 单列行。该表自建库初版从未同步。**index 表行属绿灯区（索引维护），但含用户内容口径，故仅报告不擅改，待确认后一次修**
+- 🟡 **`知识库/知识库/` 嵌套目录第 2 周复现（3 篇）：** `rea逆向分析mcp.md`、`rea逆向分析mcp-补充.md`、`career-ops-开源ai求职agent.md`。**新证据：career-ops 在 `技能文档/` 已有正式版（`2026-10-30-career-ops-开源AI求职Agent.md`），嵌套目录里是小写文件名副本 — 确认为重复写入，非新内容。** 建议在 Obsidian 内排查抓取脚本输出路径，从源头修复
+- 🟡 过期内容：19/24 页越过 90 天线（13 页 2026-05-05 已 188 天；6 页 2026-06-04 已 158 天）— 与第 18 次集合完全一致
+- 🟡 索引占位：24 个条目指向不存在的页面（清单同第 13–18 次）— 持续 20 周。反向完整 ✅（无「有页面未入索引」），索引无重复条目 ✅
+- 🟡 孤儿页：7 个无入站链接（book-to-skill, coze, langgraph, neuro-symbolic-ai, openclaw-web-search-tools, skilldag, wechat-access-methods）— 持平
+- 🟡 feishu-api-access.md 190 行（连续 17 次预警，距 200 行阈值 10 行）
+- 🟡 16 个标签未纳入 SCHEMA 体系（ai-coding, api, browser, china, cli, cloud, configuration, customization, lab, model, multi-agent, optimization, orchestration, platform, research, technique）— 持续 20 周，属黄灯区
+- 🟢 出站链接：24/24 达标（每页 ≥2 出站）✅
+- 🟢 Layer 2 frontmatter：24/24 六项必填字段齐全 ✅；无 contested / contradictions ✅；无 confidence: low/medium ✅；无 >200 行页面（最大 feishu-api-access 190）✅
+- 🟢 raw/ 7 文件中 5 个 strip 口径 hash 全匹配 ✅（脚本 naive 口径报 7 mismatch，为已知口径问题，非真实漂移）
+- 🟢 Log 条目数 32（含本次），无需轮转 ✅
+- 🟢 **知识库侧计数自洽：** README 与快速导航均为 384 篇，实际 `技能文档/` 384（含 2 子目录）—— 三方一致 ✅（后续更新时以 README/快速导航 header 的 384 为基线 +N，勿用 find 重算）
+- ⚠️ **脱节扩大：知识库 430 → 441（+11 篇），Wiki 层仍 24 页。Wiki 自 2026-06-04 起 22 周零摄入。** 本周新增中与 Wiki 强相关的现成素材：
+  - `2026-11-02-疯掉啦15K-Star的LiveKit-Agents` → 候选新 entity（voice agent）
+  - `2026-11-03-把Harness拆成插件-美团中科大PluginRSI分块式自进化` → [[harness-architecture]]（断链目标，正好可借新源建页并顺手消一处断链）
+  - `2026-11-06-NorthCUA-北坡开源完整Computer-Use方案模型数据训练Harness` → [[harness-architecture]] / [[opencli]]
+  - `2026-11-08-Astron-Agent-科大讯飞企业级Agentic-Workflow平台开源拆解` → [[agent-orchestration]]
+  - `2026-11-06-SAG2-本地知识库神-BM25加JEV打破不可能三角` → [[rag]]（概念页空缺）
+  - `2026-11-04-英伟达开源Auto-Ontology` → 候选新 entity（语义层）
+- 趋势：断链 11/16、索引占位 24、红绿灯违规 连续第 20 周零变化；过期 19、孤儿 7 持平；raw 漂移 2（待决第 2 周）；**新增问题 1 项（index 映射表过期，首次发现）**
+- 待决清单（累积，全部等小谭一句话）：**(A)** 绿灯修复包清零 11 个断链目标；**(B)** 一次性签字 24 页 confidence:high + 追认 2 查询页；**(C)** 降频/暂停周报；**(D)** raw/ 2 个漂移源处理方式（删除重复 frontmatter 重算 or 重抓）。第 14 次提出，等待第 56 天。**建议优先做 (D)+(A)：两项都是纯机械修复，一次可消掉 1 个红灯 + 11 个红灯断链。**
+
+## [2026-11-16] lint | 第20次健康检查 — 每周例行（降频规则：Layer 1 有新增，Wiki 层仍零改动）
+- 扫描 24 个 Wiki 页面（16 entities + 6 concepts + 0 comparisons + 2 queries）+ 7 raw/ 文件 + 知识库 459 篇
+- ⚖️ **降频规则判定：Wiki 层与第 19 次逐项一致（24 页 md5 全等，最新 mtime 仍为 10-12）；变化全在 Layer 1（+18 篇）。按规则简报投递，冻结项一行带过**
+- 🔴 **断链：11 个唯一目标 / 16 处引用 — 冻结第 21 周，与第 16–19 次逐字一致**
+  - entities/anthropic.md → [[openai]]
+  - entities/book-to-skill.md → [[skill-development]], [[knowledge-management]]
+  - entities/claude-code.md → [[stitch-2.0]]
+  - entities/compound-engineering.md → [[knowledge-management]]
+  - entities/myharness.md → [[gstack]]×2（同页重复）
+  - entities/openclaw.md → [[instreet]]
+  - entities/opencli.md → [[agent-reach]], [[bb-browser]]
+  - entities/openspace.md → [[skill-development]]
+  - entities/skilldag.md → [[skill-development]]
+  - concepts/neuro-symbolic-ai.md → [[harness-architecture]]
+  - concepts/知识蒸馏.md → [[moonshot-ai]], [[openai]], [[xai]]
+- 🔴 **红绿灯违规（红灯）：24/24 页 `confidence: high`，无一获人类签字确认（连续 21 周）**
+- 🔴 **红绿灯违规（黄灯）：2 查询页（openclaw-web-search-tools / wechat-access-methods）AI 单方面归档，未走审批（连续 21 周）**
+- 🔴 **raw/ 真实源漂移 — 待决第 3 周：** `hermes-full-config-guide.md`（f9391651…→09408fb7…）、`hermes-llm-wiki-实战-2026-04-17.md`（fe4bf10b…→e8a1f54f…）。根因已确认：正文紧接第二层完整 frontmatter，抓取时把源文章自带 YAML 头一并写入。**raw/ 属红灯区，AI 不修改 — 待小谭二选一：①删正文第二层 frontmatter 后重算 sha256；②重新抓取覆盖**
+- 🟡 过期内容：21/24 页越过 90 天线 — **较第 19 次 19 页新增 2 页**（feishu-api-access / hermes-agent，updated=2026-08-17，已 91 天）。13 页 2026-05-05 已 195 天；6 页 2026-06-04 已 165 天
+- 🟡 索引占位：24 个条目指向不存在的页面（清单同第 13–19 次）— 持续 21 周。反向完整 ✅（无「有页面未入索引」），索引无重复条目 ✅
+- 🟡 孤儿页：7 个无入站链接（book-to-skill, coze, langgraph, neuro-symbolic-ai, openclaw-web-search-tools, skilldag, wechat-access-methods）— 持平
+- 🟡 feishu-api-access.md 190 行（连续 18 次预警，距 200 行阈值 10 行）
+- 🟡 16 个标签未纳入 SCHEMA 体系（ai-coding, api, browser, china, cli, cloud, configuration, customization, lab, model, multi-agent, optimization, orchestration, platform, research, technique）— 持续 21 周，属黄灯区
+- 🟡 **index.md「知识库来源映射」表仍严重过期（第 3 周）：** 表内 `技能文档 36` / `教程指南 3` / `复盘日记 3`，实际 `402` / `5` / `2`；另列已不存在的 `技能文档/开源工具/` 单列行。属绿灯区但含用户内容口径，待确认后一次修
+- 🟡 **`知识库/知识库/` 嵌套目录第 3 周复现（3 篇）：** `2026-10-23-rea逆向分析mcp.md`、`2026-10-23-rea逆向分析mcp-补充.md`、`2026-10-30-career-ops-开源ai求职agent.md`（小写副本；career-ops 在 `技能文档/` 已有正式版）。建议排查抓取脚本输出路径
+- 🟢 出站链接：24/24 达标（每页 ≥2 出站）✅；Layer 2 frontmatter 24/24 六项齐全 ✅；无 contested/contradictions ✅；无 confidence: low/medium ✅；无 >200 行页面 ✅
+- 🟢 raw/ 5/7 strip 口径匹配 ✅；Log 条目数 33（含本次），无需轮转 ✅
+- 🟢 **知识库计数需更新：README 与快速导航 header 仍写 402，实际 `知识库/技能文档/` 已 402**（自洽 ✅）；但含 entities/concepts/comparisons 子结构后 Layer 1 总数 459。嵌套目录 3 篇为重复，清理后为 456
+- ⚠️ **脱节继续扩大：知识库 441 → 459（+18 篇），Wiki 层仍 24 页。Wiki 自 2026-06-04 起 23 周零摄入。** 本周新增高价值素材：
+  - `2026-11-14-Hermes满血全模态-生图生视频视觉语音`、`2026-11-14-Hermes进阶能力-工作流可视化与专家团` → [[hermes-agent]]（现成更新源，正好可消过期项）
+  - `2026-11-14-DSH-Desktop全模态满配搭建`、`2026-11-14-DSH接浏览器与手机-设备工作台` → harness 主题 / [[opencli]]
+  - `2026-11-10-Aperant一个人顶一个团队-ClaudeCode多Agent开发小队` → [[agent-orchestration]]
+  - `2026-11-12-Modern-Web-Guidance-给AI装现代Web知识大脑` → [[agent-reach]]（断链目标候选）
+  - `2026-11-08-Astron-Agent企业级Agentic-Workflow平台` → [[agent-orchestration]] / [[harness-architecture]]
+- 趋势：断链 11/16、索引占位 24、红绿灯违规 连续第 21 周零变化；孤儿 7 持平；过期 19 → 21（+2，自然越线）；raw 漂移 2（待决第 3 周）
+- 待决清单（累积）：**(A)** 绿灯修复包清零 11 个断链目标；**(B)** 一次性签字 24 页 confidence:high + 追认 2 查询页；**(C)** 降频/暂停周报；**(D)** raw/ 2 个漂移源处理方式。第 14 次提出，等待第 63 天
