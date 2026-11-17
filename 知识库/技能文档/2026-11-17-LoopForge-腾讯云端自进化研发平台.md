@@ -1,9 +1,22 @@
 ---
-title: "登上 GitHub Trending｜腾讯开源 LoopForge：云端自进化研发平台"
-source: "腾讯技术工程"
-source_url: "https://mp.weixin.qq.com/s/-gagDmalGrKyTtA-1dc8BQ"
-date: "2026-11-17"
-tags: [LoopForge, 腾讯轻量云, 云端工作区, 多智能体, SOP流水线, RSI, 自进化, Coding-Agent, Super-agent]
+type: concept
+title: 登上 GitHub Trending｜腾讯开源 LoopForge：云端自进化研发平台
+date: '2026-11-17'
+source: 腾讯技术工程
+source_url: 'https://mp.weixin.qq.com/s/-gagDmalGrKyTtA-1dc8BQ'
+ingested_via: put_page
+ingested_at: '2026-11-17T10:09:30.365Z'
+source_kind: put_page
+tags:
+  - 云端工作区
+  - 多智能体
+  - 腾讯轻量云
+  - 自进化
+  - Coding-Agent
+  - LoopForge
+  - RSI
+  - SOP流水线
+  - Super-agent
 ---
 
 # 登上 GitHub Trending｜腾讯开源 LoopForge
