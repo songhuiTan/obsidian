@@ -1,9 +1,22 @@
 ---
-title: "用 Super-agent 的理念，拆解 Octop 团队模式"
-source: "腾讯技术工程"
-source_url: "https://mp.weixin.qq.com/s/5r_EhRzdgRgzg8kWmZDyRQ"
-date: "2026-11-16"
-tags: [Super-Agent, Octop, 多智能体, Router-Worker, 事件驱动, 全双工, 脑手分离, 腾讯云, DeepSeek]
+type: concept
+title: 用 Super-agent 的理念，拆解 Octop 团队模式
+date: '2026-11-16'
+source: 腾讯技术工程
+source_url: 'https://mp.weixin.qq.com/s/5r_EhRzdgRgzg8kWmZDyRQ'
+ingested_via: put_page
+ingested_at: '2026-11-17T05:58:33.743Z'
+source_kind: put_page
+tags:
+  - 事件驱动
+  - 全双工
+  - 多智能体
+  - 脑手分离
+  - 腾讯云
+  - DeepSeek
+  - Octop
+  - Router-Worker
+  - Super-Agent
 ---
 
 # 用 Super-agent 的理念，拆解 Octop 团队模式
