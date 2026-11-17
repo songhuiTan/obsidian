@@ -332,3 +332,7 @@ https://github.com/TencentCloud/Octop
 ## 归档日志
 
 - 2026-10-20 归档（Firecrawl MCP 提取正文 + 6 张内容图落盘；GitHub/API 实测仓库指标：10,294⭐ / 1,305 forks / 68 contributors / 855 issues / MIT / v1.0.2 / PyPI 可装；剥离第十一、十二节知识星球导流与赞赏 UI，imgIndex 5 与 imgIndex 0 为同一张控制台截图已去重）
+
+---
+
+> 延伸阅读：[[技能文档/2026-11-16-用Super-agent理念拆解Octop团队模式|用 Super-agent 的理念，拆解 Octop 团队模式]]（DeepSeek Super-agent 对照下的团队模式架构拆解：双层结构、事件驱动、全双工、脑手分离，含九组概念映射表）

@@ -24,13 +24,17 @@ tags:
 > 作者：Jubaoliang，Octop 负责人 ｜ 来源：腾讯技术工程 ｜ 发布：2026-11-16 15:26
 > 本文以 DeepSeek《Super-agent 设计探索》为参照，解析腾讯云开源项目 **Octop** 的「团队模式」如何独立落地了同一套多任务并行架构。
 
-## 导读
+
 
 DeepSeek 发布长文系统阐述 Super-Agent 设计理念——打破 AI「单次仅能处理单一任务」的旧范式，以**调度员（Router）+ 执行单元（Worker）**的双层架构实现任务并行与后台运行。
 
 无独有偶，Octop 在 **1.0.2 版本**便已上线「团队模式」：由**主持人 Agent** 统筹分解任务、多名**专家 Agent** 并行执行。两者核心思路殊途同归，形成了一次跨越产品与时间的对照印证。
 
 ![腾讯技术工程公众号头部动图](../assets/2026-11-16-Octop团队模式-Super-agent/img_001.gif)
+
+---
+
+> 相关归档：[[技能文档/2026-10-15-自托管AI-Agent开源项目-腾讯Octop|Octop 项目介绍与实测（10,294⭐）]]（项目概况、安装与本机运行）｜[[技能文档/DeerFlow 2.0 - 字节Super Agent Harness-2026-03-27|DeerFlow 2.0：字节 Super Agent Harness]]
 
 ---
 
