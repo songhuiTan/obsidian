@@ -58,6 +58,10 @@ nana娜娜呀 分享的 Codex 神级 Skill——**record-and-replay-skill**。�
 
 4. **Computer Use 的延伸** —— 视频最后展示了 Computer Use 接管鼠标的能力。如果把 Record-and-Replay + Computer Use 结合起来，就是"先演示一次，以后让 AI 自己操作"的完整闭环
 
+## 相关
+
+- [[2026-10-03-FlowNote-把浏览器操作录成Codex-Skill-流程笔记]] —— 第三方独立实现（FlowNote v0.8.0），比官方 Skill 多出条件分支、语义化拖动 JSON、隐私脱敏和 Windows 支持。本篇讲官方能力，那篇讲替代品能做到多细。
+
 ## 归档日志
 
 - 2026-07-30 归档
