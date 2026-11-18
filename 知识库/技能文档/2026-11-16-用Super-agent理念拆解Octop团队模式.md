@@ -432,6 +432,7 @@ DeepSeek 在终篇明确指出：这套看似前沿的系统架构**在理论层
 ## 附录 ｜参考来源
 
 - DeepSeek 产品部《Super-agent 设计探索：迈向更自主的 Agent 系统》，2026-10-31；开源原型为研究原型，官方声明非正式产品
+- **原文已归档**：[[2026-10-31-Super-agent设计探索-DeepSeek-Harness团队原文]]（DeepSeek Harness 团队，16,208 字全文 + 14 张图 + 全部实验数据原始表格）
 - 该文的公开解读与报道：《Super Agent 到底是什么？》《一文读懂 DeepSeek Super-agent》《把 AI 从「一个窗口」变成「一个同事」》《Deepseek Super Agent 是什么鬼？》，以及环球网、浙江在线、新浪财经、央广网的报道。文中试验数字引自这些解读对原文的转述，**正式引用请以 DeepSeek 原文为准**
 - Octop 官方《一分钟了解 Octop》；1.0.2 解读《自托管 AI 助手新特性：由不同性格的专家组队协作》；《腾讯开源 Octop：从个人助手到小团队工作区》；《腾讯云发布 Octop：开源版 WorkBuddy 真的来了？》；《Octop 装完就能用，聊得越多它越懂你》
 - Octop 项目内的《专家团队模式》《Agent 后台协作》《Inbox + Callback 方案》三份设计文档
