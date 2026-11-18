@@ -37,3 +37,6 @@ coverage/
 # 临时文件
 tmp/
 temp/
+
+# 备份仓库的元数据目录（裸仓库 .git 除外：assets/backup-github/*.git 是有意备份）
+知识库/assets/backup-github/*/.git/
